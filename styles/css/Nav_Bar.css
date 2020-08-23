@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("../../fonts/Yekan.ttf");
+}
+
+a {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MyFont";
+}
+
+.c-container {
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+@media (max-width: 1600px) {
+  .c-container {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .c-container {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+}
+
+@media (max-width: 650px) {
+  .c-container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+#logo-top-img {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 16vw;
+}
+
+@media (max-width: 1442px) {
+  #logo-top-img {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 5vw;
+  }
+}
+
+@media (max-width: 400px) {
+  #logo-top-img {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 0;
+  }
+}
+
+.navbar-color {
+  color: #E4AE4C !important;
+}
+
+.logo-top-width-f {
+  width: 200px;
+}
+
+@media (max-width: 1442px) {
+  .logo-top-width-f {
+    width: 130px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo-top-width-f {
+    width: 100px;
+  }
+}
+
+.logo-footer-width-f {
+  width: 210px;
+}
+
+@media (max-width: 1442px) {
+  .logo-footer-width-f {
+    width: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo-footer-width-f {
+    width: 120px;
+  }
+}
+
+.option-img {
+  width: 30px;
+}
+
+@media (max-width: 500px) {
+  .option-img {
+    width: 18px;
+  }
+}
+
+.option-img-1 {
+  width: 25px;
+}
+
+@media (max-width: 500px) {
+  .option-img-1 {
+    width: 15px;
+  }
+}
+
+.drawer-img {
+  width: 25px;
+}
+
+@media (max-width: 500px) {
+  .drawer-img {
+    width: 20px;
+  }
+}
+
+.costom-ml {
+  margin-right: 3rem;
+}
+
+@media (max-width: 1442px) {
+  .costom-ml {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .costom-ml {
+    margin-right: 1rem;
+  }
+}
+/*# sourceMappingURL=Nav_Bar.css.map */

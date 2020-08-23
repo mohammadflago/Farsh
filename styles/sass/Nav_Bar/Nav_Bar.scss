@@ -1,0 +1,93 @@
+@import "../base";
+
+
+.c-container{
+    padding-right: 200px; 
+    padding-left: 200px;
+
+    @media (max-width:1600px) {
+        padding-right: 100px; 
+        padding-left: 100px; 
+    }
+    @media (max-width:1210px) {
+        padding-right: 70px; 
+        padding-left: 70px; 
+    }
+    @media (max-width:650px) {
+        padding-right: 20px; 
+        padding-left: 20px; 
+    }
+    
+}
+
+#logo-top-img{
+    margin-top: 6px; 
+    margin-bottom: 6px; 
+    margin-left: 16vw;
+
+    @media (max-width:1442px) {
+        margin-top: 4px; 
+        margin-bottom: 4px;
+        margin-left: 5vw ; 
+    }
+    @media (max-width:400px) {
+        margin-top: 2px; 
+        margin-bottom: 2px; 
+        margin-left: 0; 
+         
+    }
+
+}
+.navbar-color{
+    color: #E4AE4C !important;
+}
+.logo-top-width-f{
+    width: 200px;
+
+    @media (max-width:1442px) {
+        width: 130px;
+    }
+    @media (max-width:500px) {
+        width: 100px;
+    }
+}
+.logo-footer-width-f{
+    width: 210px;
+
+    @media (max-width:1442px) {
+        width: 150px;
+    }
+    @media (max-width:500px) {
+        width: 120px;
+    }
+}
+.option-img {
+    width: 30px;
+    @media (max-width:500px) {
+        width: 18px;
+    }
+}
+.option-img-1 {
+    width: 25px;
+    @media (max-width:500px) {
+        width: 15px;
+    }
+}
+.drawer-img {
+    width: 25px;
+    @media (max-width:500px) {
+        width: 20px;
+    }
+}
+.costom-ml{
+    margin-right: 3rem;
+
+    @media (max-width:1442px) {
+    margin-right: 2rem;
+        
+    }
+    @media (max-width:500px) {
+        margin-right: 1rem;
+
+    }
+}
