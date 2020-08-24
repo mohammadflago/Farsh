@@ -70,7 +70,7 @@
 
 			<div id="slide-p">
 
-				<div class="d-flex slide align-items-center ">
+				<span class="slide-t align-items-center d-none d-flex">
 					<!-- main image slide -->
 					<div class="w-100">
 						<img src="image/Carpet-Download-Transparent-PNG-Image@2x.png" class="w-100" alt="">
@@ -94,10 +94,10 @@
 					</div>
 					<!-- end main content -->
 
-				</div>
+				</span>
 
 
-				<div class="d-flex  slide align-items-center">
+				<span class=" slide-t align-items-center d-none">
 					<!-- main image slide -->
 					<div class="w-100">
 						<img src="image/Carpet-Download-Transparent-PNG-Image@2x.png" class="w-100" alt="">
@@ -121,10 +121,10 @@
 					</div>
 					<!-- end main content -->
 
-				</div>
+				</span>
 
 
-				<div class="d-flex slide align-items-center">
+				<span class="slide-t align-items-center d-none">
 					<!-- main image slide -->
 					<div class="w-100">
 						<img src="image/Carpet-Download-Transparent-PNG-Image@2x.png" class="w-100" alt="">
@@ -148,7 +148,7 @@
 					</div>
 					<!-- end main content -->
 
-				</div>
+				</span>
 
 			</div>
 			<!-- end contents slide -->
@@ -158,6 +158,57 @@
 			</div>
 		</div>
 		<!-- end slider -->
+
+		<div class="c-container">
+
+			<div class="d-flex" style="margin-top: 5rem; ">
+
+				<div class="d-flex flex-column" style="width: 70%; margin-left: 1.6rem;height: 650px !important;">
+					<div style="margin-bottom: 1.6rem;">
+						<div class="bgc d-flex w-100 align-items-center">
+							<div class="w-100">
+								<h1 class=" text-center">37% تخفیف فرش دست باف</h1>
+								<div class="w-100 d-flex justify-content-center mt-lg-3">
+									<a href="#" class="btn p-2 pt-lg-3 pb-lg-3 pr-lg-4 pl-lg-4 text-white shop-btn text-nowrap">همین الان خرید کنید</a>
+								</div>
+							</div>
+							<div class="w-100 pt-5 pb-5 pl-4 ml-4 mr-4 mt-4 mb-5">
+								<img src="image/carpet_PNG57667@2x.png" class="w-100" alt="carpet">
+							</div>
+						</div>
+					</div>
+
+					<div class="">
+						<div class="bgc d-flex w-100 align-items-center">
+							<div class="w-100">
+								<h1 class="text-center">37% تخفیف فرش دست باف</h1>
+								<div class="w-100 d-flex justify-content-center mt-lg-3">
+									<a href="#" class="btn p-2 pt-lg-3 pb-lg-3 pr-lg-4 pl-lg-4 text-white shop-btn text-nowrap">همین الان خرید کنید</a>
+								</div>
+							</div>
+							<div class="w-100 pt-5 pb-5 pl-3 ml-4 mr-4">
+								<img src="image/carpet_PNG57715@2x.png" class="w-100" alt="carpet">
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="h-100">
+					<div class="bgc d-flex w-100 align-items-center" style="height: 600px;">
+						<div class="w-50">
+							<h1 class="text-center text-content"> تخفیف %37<br> فرش دست باف</h1>
+							<div class="w-100 d-flex justify-content-center mt-lg-3">
+								<a href="#" class="btn p-2 pt-lg-3 pb-lg-3 pr-lg-4 pl-lg-4 text-white shop-btn text-nowrap">همین الان خرید کنید</a>
+							</div>
+						</div>
+						<div class="w-100 pt-5 pb-5 pl-3 ">
+							<img src="image/carpet_PNG57687@2x.png" class="w-100" alt="carpet">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	</main>
 	<!-- end main context -->
@@ -190,12 +241,26 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
 	<script>
-		$("#back-slide").click(function(){
-			$("#slide-p").find("div").last().addClass("d-flex");
-			$(".slide").first().removeClass("d-flex")
-		});
+		// $("#next-slide").click(function(){
+		// 	if($('.slide-t').next('span').length == 2){
+		// 		var 
+		// 	}
+		// }
+		// $(".slide-t").first()
+		// $(".slide").next().hide();
+		// $(".slide").next().fadeIn();
+
+		// $("#back-slide").click(function(){
+		// 	$("#slide-p").find("div").last().addClass("d-flex");
+		// 	$(".slide").first().removeClass("d-flex")
+		// });
+		// $("#next-slide").click(function(){
+		// 	$("#slide-p").find("div").last().addClass("d-flex");
+		// 	$(".slide").first().removeClass("d-flex")
+		// });
 		
-		
+		// aa.classList.add("d-none");
+
 		// document.body.style.zoom = "90%";
 		// set profile image
 		$(".preview").click(function () {
