@@ -15,7 +15,7 @@ a {
 }
 
 body {
-  background-image: url("../../image/4830@2x.png");
+  background-image: url("../../image/4694@2x.png");
   background-size: 100%;
   height: 100%;
   background-position: center;
@@ -97,7 +97,6 @@ body {
 }
 
 .shop-btn {
-  background-color: #E4AE4C;
   border-radius: 1px !important;
   font-size: 16px;
 }
@@ -161,6 +160,125 @@ body {
 }
 
 .bgc {
-  background-color: #FAEFDB;
+  background-color: #FAEFDB !important;
+}
+
+@media (min-width: 996px) {
+  .padding-set {
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.text-content-t {
+  font-size: 31px;
+  line-height: 50px;
+}
+
+@media (max-width: 1600px) {
+  .text-content-t {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .text-content-t {
+    font-size: 20px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 650px) {
+  .text-content-t {
+    font-size: 16px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .text-content-t {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .text-content-t {
+    font-size: 10px;
+    line-height: 30px;
+  }
+}
+
+.all-commodity-f {
+  font-size: 31px;
+}
+
+@media (max-width: 1600px) {
+  .all-commodity-f {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .all-commodity-f {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .all-commodity-f {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .all-commodity-f {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .all-commodity-f {
+    font-size: 10px;
+  }
+}
+
+.text-categury {
+  font-size: 18px;
+}
+
+@media (max-width: 1600px) {
+  .text-categury {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .text-categury {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 650px) {
+  .text-categury {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .text-categury {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .text-categury {
+    font-size: 8px;
+  }
+}
+
+.bgc-1 {
+  background-color: #E4AE4C !important;
 }
 /*# sourceMappingURL=Home.css.map */

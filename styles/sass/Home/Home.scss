@@ -1,7 +1,7 @@
 @import "../base";
 
 body {
-    background-image: url("../../image/4830@2x.png");
+    background-image: url("../../image/4694@2x.png");
     background-size: 100%;
     height: 100%;
     background-position: center;  
@@ -53,8 +53,8 @@ body {
         line-height: 30px;
     }
 }
+
 .shop-btn{
-    background-color: #E4AE4C;
     border-radius: 1px !important;
     font-size: 16px;
     @media (max-width:1600px) {
@@ -96,5 +96,76 @@ body {
 
 }
 .bgc{
-    background-color: #FAEFDB;
+    background-color: #FAEFDB !important;
+}
+
+.padding-set{
+    @media (min-width:996px) {
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+}
+.text-content-t{
+    font-size: 31px;
+    line-height: 50px;
+    @media (max-width:1600px) {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    @media (max-width:1210px) {
+        font-size: 20px;
+        line-height: 45px;
+    }
+    @media (max-width:650px) {
+        font-size: 16px;
+        line-height: 40px;
+    }
+    @media (max-width:500px) {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    @media (max-width:400px) {
+        font-size: 10px;
+        line-height: 30px;
+    }
+}
+.all-commodity-f{
+    font-size: 31px;
+    @media (max-width:1600px) {
+        font-size: 30px;
+    }
+    @media (max-width:1210px) {
+        font-size: 20px;
+    }
+    @media (max-width:650px) {
+        font-size: 16px;
+    }
+    @media (max-width:500px) {
+        font-size: 14px;
+    }
+    @media (max-width:400px) {
+        font-size: 10px;
+    }
+}
+.text-categury{
+    font-size: 18px;
+    @media (max-width:1600px) {
+        font-size: 16px;
+    }
+    @media (max-width:1210px) {
+        font-size: 14px;
+    }
+    @media (max-width:650px) {
+        font-size: 12px;
+    }
+    @media (max-width:500px) {
+        font-size: 10px;
+    }
+    @media (max-width:400px) {
+        font-size: 8px;
+    }
+}
+.bgc-1{
+    background-color: #E4AE4C !important;
+
 }
