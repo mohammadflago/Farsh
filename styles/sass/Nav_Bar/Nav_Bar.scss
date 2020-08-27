@@ -208,7 +208,7 @@
     width: 300px;
     margin-top:1rem!important;
   //  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.055), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-  background-color: #004b7d !important;
+  // background-color: #004b7d !important;
   color: white;
     border-radius: 5px;
     clear: both;
@@ -466,6 +466,7 @@
       color: white;
               // box-sha
               background-color: #004b7d;
+    }
   }
   
   .HeaderOfPage_div {
@@ -636,8 +637,8 @@
     background-color: #004b7d !important;
     color: white;
             // box-sha
-            background-color: #004b7d !impo
-  
+            background-color: #004b7d ;
+  }
   @media (min-width: 992px) {
     .BackExit_div {
       display: -webkit-box !important;
@@ -991,7 +992,7 @@
     border: none;
   }
   
-
+}
 .font-navbar{
   font-size: 18;
   @media (max-width: 1110px) {
