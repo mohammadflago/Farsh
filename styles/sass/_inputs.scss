@@ -1,0 +1,64 @@
+@import "./base";
+
+.input-group {
+  border: 1px $inputs solid;
+  padding: 10px;
+  height: 60px;
+  @media (max-width: 390px) {
+    padding: 0px;
+  }
+}
+
+input {
+  /* background-color: transparent; */
+  border: none !important;
+  width: 270px;
+}
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: $inputs;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: $inputs;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: $inputs;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $inputs;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $inputs;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: $inputs;
+  font-size: 18px;
+  @media (min-width: 300px) and (max-width: 340px) {
+    font-size: 13px;
+  }
+  @media (min-width: 341px) and (max-width: 400px) {
+    font-size: 15px;
+  }
+  @media (min-width: 401px) and (max-width: 767px) {
+    font-size: 17px;
+  }
+  // @media (min-width: 768px) {
+  //   font-size: 14px;
+  // }
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  border: none !important;
+  box-shadow: none !important;
+}

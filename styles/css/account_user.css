@@ -1,0 +1,370 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("../../fonts/Yekan.ttf");
+}
+
+a {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MyFont";
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("../../fonts/Yekan.ttf");
+}
+
+a {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MyFont";
+}
+
+.input-group {
+  border: 1px #bdbdbd solid;
+  padding: 10px;
+  height: 60px;
+}
+
+@media (max-width: 390px) {
+  .input-group {
+    padding: 0px;
+  }
+}
+
+input {
+  /* background-color: transparent; */
+  border: none !important;
+  width: 270px;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #bdbdbd;
+  font-size: 18px;
+}
+
+@media (min-width: 300px) and (max-width: 340px) {
+  ::placeholder {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 341px) and (max-width: 400px) {
+  ::placeholder {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 767px) {
+  ::placeholder {
+    font-size: 17px;
+  }
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 1400px) {
+  .jkjezdfv {
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 1345px) {
+  .jkjezdfv {
+    width: 74% !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .jkjezdfv {
+    width: 72% !important;
+  }
+}
+
+@media (max-width: 1206px) {
+  .jkjezdfv {
+    width: 70% !important;
+  }
+}
+
+@media (max-width: 1131px) {
+  .jkjezdfv {
+    width: 65% !important;
+  }
+}
+
+@media (max-width: 974px) {
+  .jkjezdfv {
+    width: 60% !important;
+  }
+}
+
+@media (max-width: 864px) {
+  .jkjezdfv {
+    width: 55% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .jkjezdfv {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .jkjezdfv-b {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .jkjezdfv-b {
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 1345px) {
+  .jkjezdfv-b {
+    width: 74% !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .jkjezdfv-b {
+    width: 72% !important;
+  }
+}
+
+@media (max-width: 1206px) {
+  .jkjezdfv-b {
+    width: 70% !important;
+  }
+}
+
+@media (max-width: 1131px) {
+  .jkjezdfv-b {
+    width: 65% !important;
+  }
+}
+
+@media (max-width: 974px) {
+  .jkjezdfv-b {
+    width: 60% !important;
+  }
+}
+
+@media (max-width: 864px) {
+  .jkjezdfv-b {
+    width: 55% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .jkjezdfv-b {
+    width: 100% !important;
+  }
+}
+
+::placeholder {
+  color: #bdbdbd !important;
+  font-size: 19px !important;
+}
+
+@media (max-width: 1627px) {
+  ::placeholder {
+    font-size: 17px !important;
+  }
+}
+
+@media (max-width: 1532px) {
+  ::placeholder {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 1444px) {
+  ::placeholder {
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  ::placeholder {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 1277px) {
+  ::placeholder {
+    font-size: 11px !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  ::placeholder {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  ::placeholder {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 330px) {
+  ::placeholder {
+    font-size: 13px !important;
+    padding-top: 5px !important;
+  }
+}
+
+@media (max-width: 1301px) {
+  .input-p-s-l {
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .input-p-s-l {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 1301px) {
+  .input-p-s-r {
+    padding-right: 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .input-p-s-r {
+    padding-right: 15px;
+  }
+}
+
+.font-list {
+  font-size: 17px !important;
+}
+
+@media (max-width: 1472px) {
+  .font-list {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .font-list {
+    font-size: 17px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .font-list {
+    font-size: 16px !important;
+  }
+}
+
+.main-mobail-pt {
+  padding-top: 360px;
+}
+
+@media (min-width: 767px) {
+  .main-mobail-pt {
+    padding-top: 55px;
+  }
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.custom-file-input::before {
+  content: "Select some files";
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+.custom-file-input:hover::before {
+  border-color: black;
+}
+
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.btn-submit {
+  font-size: 21px;
+  padding: 0px;
+  width: 20%;
+}
+
+@media (max-width: 1024px) {
+  .btn-submit {
+    width: 80%;
+  }
+}
+
+.mt-f {
+  margin-top: 5rem;
+}
+
+@media (max-width: 1200px) {
+  .mt-f {
+    margin-top: 3rem;
+  }
+}
+
+.preview {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: none;
+  background-color: #f6f5f5;
+  cursor: pointer;
+}
+
+#upload {
+  display: none;
+  top: 1%;
+}
+
+@-moz-document url-prefix() {
+  .yff {
+    width: 30% !important;
+  }
+  @media (max-width: 992px) {
+    .yff {
+      width: 32% !important;
+    }
+  }
+}
+/*# sourceMappingURL=account_user.css.map */
