@@ -2,45 +2,15 @@
 @import "../inputs";
 
 .jkjezdfv {
-  @media (max-width: 1400px) {
-    width: 75% !important;
-  }
-
-  @media (max-width: 1345px) {
-    width: 74% !important;
-  }
-
-  @media (max-width: 1300px) {
-    width: 72% !important;
-  }
-  @media (max-width: 1206px) {
-    width: 70% !important;
-  }
-  @media (max-width: 1131px) {
-    width: 65% !important;
-  }
-  @media (max-width: 974px) {
-    width: 60% !important;
-  }
-  @media (max-width: 864px) {
-    width: 55% !important;
-  }
-  @media (max-width: 767px) {
     width: 100% !important;
-  }
+
 }
 
-.jkjezdfv-b {
+.jkjezdfv-b-2 {
   @media (min-width: 1400px) {
-    width: 80% !important;
-  }
-  @media (max-width: 1400px) {
-    width: 75% !important;
+    width: 12% !important;
   }
 
-  @media (max-width: 1345px) {
-    width: 74% !important;
-  }
 
   @media (max-width: 1300px) {
     width: 72% !important;
@@ -61,7 +31,31 @@
     width: 100% !important;
   }
 }
+.jkjezdfv-b-1 {
+  @media (min-width: 1400px) {
+    width: 20% !important;
+  }
 
+
+  @media (max-width: 1300px) {
+    width: 50% !important;
+  }
+  @media (max-width: 1206px) {
+    width: 70% !important;
+  }
+  @media (max-width: 1131px) {
+    width: 65% !important;
+  }
+  @media (max-width: 974px) {
+    width: 60% !important;
+  }
+  @media (max-width: 864px) {
+    width: 55% !important;
+  }
+  @media (max-width: 767px) {
+    width: 100% !important;
+  }
+}
 ::placeholder {
   color: #bdbdbd !important;
   font-size: 19px !important;

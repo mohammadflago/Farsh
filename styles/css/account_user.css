@@ -81,104 +81,90 @@ button:focus {
   box-shadow: none !important;
 }
 
-@media (max-width: 1400px) {
-  .jkjezdfv {
-    width: 75% !important;
-  }
+.jkjezdfv {
+  width: 100% !important;
 }
 
-@media (max-width: 1345px) {
-  .jkjezdfv {
-    width: 74% !important;
+@media (min-width: 1400px) {
+  .jkjezdfv-b-2 {
+    width: 12% !important;
   }
 }
 
 @media (max-width: 1300px) {
-  .jkjezdfv {
+  .jkjezdfv-b-2 {
     width: 72% !important;
   }
 }
 
 @media (max-width: 1206px) {
-  .jkjezdfv {
+  .jkjezdfv-b-2 {
     width: 70% !important;
   }
 }
 
 @media (max-width: 1131px) {
-  .jkjezdfv {
+  .jkjezdfv-b-2 {
     width: 65% !important;
   }
 }
 
 @media (max-width: 974px) {
-  .jkjezdfv {
+  .jkjezdfv-b-2 {
     width: 60% !important;
   }
 }
 
 @media (max-width: 864px) {
-  .jkjezdfv {
+  .jkjezdfv-b-2 {
     width: 55% !important;
   }
 }
 
 @media (max-width: 767px) {
-  .jkjezdfv {
+  .jkjezdfv-b-2 {
     width: 100% !important;
   }
 }
 
 @media (min-width: 1400px) {
-  .jkjezdfv-b {
-    width: 80% !important;
-  }
-}
-
-@media (max-width: 1400px) {
-  .jkjezdfv-b {
-    width: 75% !important;
-  }
-}
-
-@media (max-width: 1345px) {
-  .jkjezdfv-b {
-    width: 74% !important;
+  .jkjezdfv-b-1 {
+    width: 20% !important;
   }
 }
 
 @media (max-width: 1300px) {
-  .jkjezdfv-b {
-    width: 72% !important;
+  .jkjezdfv-b-1 {
+    width: 50% !important;
   }
 }
 
 @media (max-width: 1206px) {
-  .jkjezdfv-b {
+  .jkjezdfv-b-1 {
     width: 70% !important;
   }
 }
 
 @media (max-width: 1131px) {
-  .jkjezdfv-b {
+  .jkjezdfv-b-1 {
     width: 65% !important;
   }
 }
 
 @media (max-width: 974px) {
-  .jkjezdfv-b {
+  .jkjezdfv-b-1 {
     width: 60% !important;
   }
 }
 
 @media (max-width: 864px) {
-  .jkjezdfv-b {
+  .jkjezdfv-b-1 {
     width: 55% !important;
   }
 }
 
 @media (max-width: 767px) {
-  .jkjezdfv-b {
+  .jkjezdfv-b-1 {
     width: 100% !important;
   }
 }
