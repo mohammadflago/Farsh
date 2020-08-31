@@ -74,34 +74,43 @@
         </aside>
     </header>
 
-    <main class="d-flex w-100">
-        <div class="d-flex justify-content-between">
-            <div></div>
+    <main class="d-flex w-100 flex-column mt-5">
+        <div class="d-flex justify-content-between mb-3 mr-2">
+            <div>
+                <span>تعداد تیکت ها : </span><span>۲</span>
+            </div>
             <div></div>
         </div>
         <div class="d-flex w-100 flex-lg-column">
             <div class="w-50">
-                <div class="m-2 d-flex flex-column bgc">
-                    <div>
-                        <div>
-                            <span></span>
+                <div class="m-2 d-flex flex-column">
+                    <div class="d-flex bgc">
+                        <div class="d-flex justify-content-between align-items-center bgc w-75 mr-5">
+                            <div class="d-flex align-items-center mr-5">
+                                <span class="text-white">موضوع تیکت</span>
+                            </div>
+                            <div class="d-flex align-items-center mr-2">
+                                <span class="text-white">شماره فرستنده</span>
+                            </div>
+                            <div class="d-flex align-items-center mr-2">
+                                <span class="text-white">نام فرستنده</span>
+                            </div>
                         </div>
-                        <div>
-                            <span></span>
-                        </div>
-                        <div>
-                            <span></span>
-                        </div>
-                        <div>
-                            <img src="image/trash bin orange.png" width="30" alt="trash_bin_orange">
+                        <div class="float-left w-25 m-2">
+                            <img src="image/trash bin orange.png" width="36" alt="trash_bin_orange">
                         </div>
                     </div>
-                    <div>
-                        <span></span>
-                        <span></span>
+                    <div class="d-flex justify-content-between bg-white f-foo">
+                        <div class="foo d-flex">
+                            <div class="txt text-right">سلام .من محمد هادی عارفی هستم من از امروز دلم میخای جهان رو ترک کنکم</div>
+                            <a class="toggle text-primary">&ApplyFunction; + ادامه</a>
+                            <span class="">تاریخ</span>        
+                        </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
     </main>
     
@@ -193,5 +202,37 @@
         // end drawer
     </script>
 
-
+    <script>
+        if (Array.prototype.forEach) Array.prototype.forEach = function (that) {
+            for (var i = 0; i < this.length; i++) that(this[i]);
+        };
+        NodeList.prototype.forEach = HTMLCollection.prototype.forEach = Array.prototype.forEach;
+        document.querySelectorAll('.foo').forEach(function (foo) {
+            var txt = foo.querySelector(".txt"),
+                toggle = foo.querySelector(".toggle");
+            if (txt.innerHTML.length > 10) {
+                txt.setAttribute('nextPart', txt.innerHTML.substr(10, txt.innerHTML.length));
+                txt.setAttribute('toggle', '1');
+                txt.innerHTML = txt.innerHTML.substr(0, 38) ;
+            }
+            toggle.addEventListener('click', function () {
+                if (txt.getAttribute('toggle') != null) {
+                    if (txt.getAttribute('toggle') === '1') {
+                        if ( txt.getAttribute('nextPart').length <= 38){
+                            txt.innerHTML = txt.innerHTML.substr(0, txt.innerHTML.length);
+                        }else{
+                            txt.innerHTML = txt.innerHTML.substr(0, txt.innerHTML.length - 28 ) + txt.getAttribute('nextPart');
+                        }
+                        
+                        txt.setAttribute('toggle', '0');
+                        toggle.innerHTML = " - بستن";
+                    } else {
+                        txt.innerHTML = txt.innerHTML.substr(0, 38) ;
+                        txt.setAttribute('toggle', '1');
+                        toggle.innerHTML = "&ApplyFunction; + ادامه";
+                    }
+                }
+            });
+        });
+    </script>
 </body></html>
