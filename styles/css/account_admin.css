@@ -1,3 +1,10 @@
+body {
+  background-image: url("../../image/4694@2x.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
 @font-face {
   font-family: "MyFont";
   src: url("../../fonts/Yekan.ttf");
