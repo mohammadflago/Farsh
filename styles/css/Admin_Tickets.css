@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("../../fonts/Yekan.ttf");
+}
+
+a {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MyFont";
+}
+
+.bgc {
+  background-color: #004b7d;
+}
+/*# sourceMappingURL=Admin_Tickets.css.map */
