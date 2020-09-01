@@ -1,0 +1,38 @@
+@import "./../_base.scss";
+@import "./../inputs";
+.HeaderOfPage1_div {
+  background-color: $yellow;
+  color: white;
+  opacity: 0.4;
+}
+.HeaderOfPage2_div {
+  background-color: $yellow;
+  color: white;
+}
+
+.title_row {
+  height: 50px !important;
+  @media (min-width: 991px) {
+    height: 65px !important;
+    margin-right: 1px;
+  }
+}
+
+
+.preview2 {
+  width: 100%;
+  height: 180px;
+  border: none;
+  cursor: pointer;
+  @media (min-width: 300px) and (max-width: 400px) {
+    height: 170px;
+  }
+  @media (min-width: 992px) {
+    height: 212px;
+  }
+}
+
+#upload {
+  display: none;
+  top: 1%;
+}

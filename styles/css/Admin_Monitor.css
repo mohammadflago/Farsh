@@ -1,0 +1,149 @@
+body {
+  background-image: url("../../image/4694@2x.png");
+  background-size: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("../../fonts/Yekan.ttf");
+}
+
+a {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MyFont";
+}
+
+.HeaderOfPage_div {
+  background-color: #194c80;
+  color: white;
+  opacity: 0.5;
+}
+
+.HeaderOfPageOP_div {
+  background-color: #194c80;
+  color: white;
+}
+
+.rating {
+  width: 50px;
+  font-size: 40px;
+  overflow: hidden;
+  height: 44%;
+}
+
+.rating input {
+  float: right;
+  opacity: 0;
+  position: absolute;
+}
+
+.rating a,
+.rating label {
+  float: right;
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+
+.rating label:hover ~ label,
+.rating input:focus ~ label,
+.rating label:hover,
+.rating a:hover,
+.rating a:hover ~ a,
+.rating a:focus,
+.rating a:focus ~ a {
+  color: orange;
+  cursor: pointer;
+}
+
+.rating2 {
+  direction: rtl;
+}
+
+.rating2 a {
+  float: none;
+}
+
+.preview2 {
+  width: 120%;
+  height: 90%;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .preview2 {
+    height: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .preview2 {
+    height: 90%;
+  }
+}
+
+.preview3 {
+  width: 160% !important;
+  height: 44%;
+  border: none;
+  margin-right: 1vw;
+  cursor: pointer;
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .preview3 {
+    height: 44%;
+  }
+}
+
+@media (min-width: 992px) {
+  .preview3 {
+    height: 44%;
+  }
+}
+
+.preview4 {
+  width: 160% !important;
+  height: 44%;
+  border: none;
+  margin-right: 1vw;
+  cursor: pointer;
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .preview4 {
+    height: 44%;
+  }
+}
+
+@media (min-width: 992px) {
+  .preview4 {
+    height: 44%;
+  }
+}
+
+#upload1 {
+  display: none;
+  top: 1%;
+}
+
+#upload2 {
+  display: none;
+  top: 1%;
+}
+
+#upload3 {
+  display: none;
+  top: 1%;
+}
+/*# sourceMappingURL=Admin_Monitor.css.map */
