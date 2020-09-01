@@ -1,238 +1,241 @@
-<html lang="fa" dir="rtl"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- bootstrap-drawer -->
-    <link rel="stylesheet" href="dist/css/bootstrap-drawer.css">
-    <!-- main css -->
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- bootstrap-drawer -->
+        <link rel="stylesheet" href="dist/css/bootstrap-drawer.css">
+        <!-- main css -->
 
-    <link rel="stylesheet" href="./styles/css/Nav_Bar.css">
-    <link rel="stylesheet" href="./styles/css/Admin_Tickets.css">
-    <title>Admin_Monitoring</title>
+        <link rel="stylesheet" href="./styles/css/Nav_Bar.css">
+        <link rel="stylesheet" href="./styles/css/Admin_Tickets.css">
+        <title>Admin_Monitoring</title>
+    </head>
 
-
-
-
-</head>
-
-<body class="d-flex">
-    <header>
-        <nav class="d-flex d-lg-none w-100 align-items-center fixed-top bg-white p-3">
-            <img class="float-right nav-sm-icon" src="./image/nav-icon.png" alt="icon" data-toggle="drawer"
-            data-target="#drawer-1" style="width: 40px; height: 30px;">
-        </nav>
-        <aside class="d-none d-lg-flex flex-column">
-            <!-- information admin -->
-            <div class="ml-4 bg-white row no-gutters p-2 mr-4 mt-5 pb-lg-2 d-none d-md-flex d-lg-flex d-xl-flex justify-content-center mb-3" id="image" style="height: 280px;margin-top: 2rem !important;">
-                <img src="./image/bill.jpg" class="user-img rounded-circle" id="image2">
-                <h5 class="UserName_txt text-nowrap text-white">
-                    امیر حسین میرزایی
-                </h5>
-                <div class="d-flex justify-content-center w-100">
-                    <p class="PhoneUnderName text-nowrap mt-2 text-white" style="font-size: 14px;"> +98 09123456789</p>
-            
-                </div>
-            </div>
-                        <!-- end information admin -->
-            <!-- main asaid bar -->
-            <div class="row no-gutters mr-4 mt-5  d-none d-md-flex d-lg-flex d-xl-flex" id="money" style="height: 470px; border:none;">
-                <ul class="w-100 d-flex justify-content-center flex-column align-items-center m-0 ">
-                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d ;">&ApplyFunction;</li>
-
-                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
-                        <a href="#" class="d-flex align-items-center p-3 text-white">کالا ها</a>
-                    </li>
-                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
-                        <a href="#" class="d-flex align-items-center p-3 text-white">فاکتور ها</a>
-                    </li>
-                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;">
-                        <a href="#" class="d-flex align-items-center p-3 text-white">درخواست ها</a>
-                    </li>
-                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
-                        <a href="#" class="d-flex align-items-center p-3 text-white">مانیتورینگ</a>
-                    </li>
-                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;"  >
-                        <a href="#" class="d-flex align-items-center p-3 text-white">اعلان ها</a>
-                    </li>
-                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" >
-                        <a href="#" class="d-flex align-items-center p-3 text-white" style="color: #ffae00 !important;">تیکت ها</a>
-                    </li>
-                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
-                        <a href="#" class="d-flex align-items-center p-3 text-white">اطلاعات کاربری</a>
-                    </li>
-                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
-                        <a href="#" class="d-flex align-items-center p-3 text-white">خروج از حساب</a>
-                    </li>
-                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d ;">&ApplyFunction;</li>
-                </ul>
-            </div>
-                        <!-- end main asaid bar -->
-
-            <!-- end large aside bar -->
-        </aside>
-    </header>
-
-    <main class="d-flex w-100 flex-column mt-5">
-        <div class="d-flex justify-content-between mb-3 mr-2">
-            <div>
-                <span>تعداد تیکت ها : </span><span>۲</span>
-            </div>
-            <div></div>
-        </div>
-        <div class="d-flex w-100 flex-lg-column">
-            <div class="w-50">
-                <div class="m-2 d-flex flex-column">
-                    <div class="d-flex bgc">
-                        <div class="d-flex justify-content-between align-items-center bgc w-75 mr-5">
-                            <div class="d-flex align-items-center mr-5">
-                                <span class="text-white">موضوع تیکت</span>
-                            </div>
-                            <div class="d-flex align-items-center mr-2">
-                                <span class="text-white">شماره فرستنده</span>
-                            </div>
-                            <div class="d-flex align-items-center mr-2">
-                                <span class="text-white">نام فرستنده</span>
-                            </div>
-                        </div>
-                        <div class="float-left w-25 m-2">
-                            <img src="image/trash bin orange.png" width="36" alt="trash_bin_orange">
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-between bg-white f-foo">
-                        <div class="foo d-flex">
-                            <div class="txt text-right">سلام .من محمد هادی عارفی هستم من از امروز دلم میخای جهان رو ترک کنکم</div>
-                            <a class="toggle text-primary">&ApplyFunction; + ادامه</a>
-                            <span class="">تاریخ</span>        
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </main>
-    
-    <!-- Drawer -->
-    <div class="drawer drawer-right slide" tabindex="-1" role="dialog" aria-labelledby="drawer-1-title" id="drawer-1" style="width: 260px; border: none !important; display: none;" aria-hidden="true">
-        <div class="drawer-content drawer-content-scrollable" role="document" style="border: none !important;width: 110% !important;">
-            <div class="drawer-body text-center mt-0 m-0 p-0 d-flex " style="width: 101% !important;">
-                <div class="bg-white row no-gutters p-2  pb-lg-2 d-xs-flex d-sm-flex d-lg-none  mt-0 w-100 mb-0" id="image_mobile" style="margin-top: 0rem !important;width: 101% !important;">
-                    <div class="w-100 d-flex justify-content-center">
-                        <img src="./image/bill.jpg" class="user-img rounded-circle mt-4 mt-sm-3" id="image2">
-                    </div>
+    <body class="d-flex">
+        <header>
+            <nav class="d-flex d-lg-none w-100 align-items-center fixed-top bg-white p-3">
+                <img class="float-right nav-sm-icon" src="./image/nav-icon.png" alt="icon" data-toggle="drawer"
+                data-target="#drawer-1" style="width: 40px; height: 30px;">
+            </nav>
+            <aside class="d-none d-lg-flex flex-column">
+                <!-- information admin -->
+                <div class="ml-4 bg-white row no-gutters p-2 mr-4 mt-5 pb-lg-2 d-none d-md-flex d-lg-flex d-xl-flex justify-content-center mb-3" id="image" style="height: 280px;margin-top: 2rem !important;">
+                    <img src="./image/bill.jpg" class="user-img rounded-circle" id="image2">
                     <h5 class="UserName_txt text-nowrap text-white">
                         امیر حسین میرزایی
                     </h5>
-                    <div class="d-flex justify-content-between w-100">
-                        <p class="PhoneUnderName text-nowrap mt-2 " style="font-size: 15px;"> +98 09123456789</p>
+                    <div class="d-flex justify-content-center w-100">
+                        <p class="PhoneUnderName text-nowrap mt-2 text-white" style="font-size: 14px;"> +98 09123456789</p>
+                
                     </div>
                 </div>
-                <div class="bg-white row no-gutters mt-0  d-flex d-lg-none bg-primary w-100" id="money" style="height: 470px; border:none;border-radius: 0px !important;">
-                    <ul class="w-100 d-flex justify-content-center flex-column align-items-center pt-2 m-0  w-100">
-                        <li class="w-100 d-flex justify-content-center flex-column align-items-center">
+                            <!-- end information admin -->
+                <!-- main asaid bar -->
+                <div class="row no-gutters mr-4 mt-5  d-none d-md-flex d-lg-flex d-xl-flex" id="money" style="height: 470px; border:none;">
+                    <ul class="w-100 d-flex justify-content-center flex-column align-items-center m-0 ">
+                        <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d ;">&ApplyFunction;</li>
+
+                        <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
                             <a href="#" class="d-flex align-items-center p-3 text-white">کالا ها</a>
                         </li>
-                        <li class="w-100 d-flex justify-content-center flex-column align-items-center">
+                        <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
                             <a href="#" class="d-flex align-items-center p-3 text-white">فاکتور ها</a>
                         </li>
-                        <li class="w-100 d-flex justify-content-center flex-column align-items-center">
-                            <a href="#" class="d-flex align-items-center p-3 text-white" >درخواست ها</a>
+                        <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;">
+                            <a href="#" class="d-flex align-items-center p-3 text-white">درخواست ها</a>
                         </li>
-                        <li class="w-100 d-flex justify-content-center flex-column align-items-center ">
+                        <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
                             <a href="#" class="d-flex align-items-center p-3 text-white">مانیتورینگ</a>
                         </li>
-                        <li class="w-100 d-flex justify-content-center flex-column align-items-center" >
+                        <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;"  >
                             <a href="#" class="d-flex align-items-center p-3 text-white">اعلان ها</a>
                         </li>
-                        <li class="w-100 d-flex justify-content-center flex-column align-items-center  bg-white">
+                        <li class="w-100 d-flex justify-content-center flex-column align-items-center" >
                             <a href="#" class="d-flex align-items-center p-3 text-white" style="color: #ffae00 !important;">تیکت ها</a>
                         </li>
-                        <li class="w-100 d-flex justify-content-center flex-column align-items-center">
+                        <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
                             <a href="#" class="d-flex align-items-center p-3 text-white">اطلاعات کاربری</a>
                         </li>
-                        <li class="w-100 d-flex justify-content-center flex-column align-items-center">
+                        <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
                             <a href="#" class="d-flex align-items-center p-3 text-white">خروج از حساب</a>
                         </li>
+                        <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d ;">&ApplyFunction;</li>
                     </ul>
+                </div>
+                            <!-- end main asaid bar -->
+
+                <!-- end large aside bar -->
+            </aside>
+        </header>
+
+        <main class="d-flex w-100 flex-column mt-5">
+            <div class="d-flex justify-content-between mb-3 mr-2">
+                <div class="mt-5 mt-lg-0 mr-3">
+                    <span>تعداد تیکت ها : </span><span>۲</span>
+                </div>
+                <div></div>
+            </div>
+            <div class="d-flex w-100 flex-column flex-xl-row pl-4">
+                <div class="w-f-t ml-2 mr-2">
+                    <div class="m-2 d-flex flex-column">
+                        <div class="d-flex bgc">
+                            <div class="d-flex justify-content-between align-items-center bgc w-75 mr-4 mr-sm-5 mr-lg-2 ">
+                                <div class="d-flex align-items-center mr-sm-5">
+                                    <span class="text-white text-nowrap font-tickets">موضوع تیکت</span>
+                                </div>
+                                <div class="d-flex align-items-center mr-2">
+                                    <span class="text-white text-nowrap font-tickets">شماره فرستنده</span>
+                                </div>
+                                <div class="d-flex align-items-center mr-2">
+                                    <span class="text-white text-nowrap font-tickets">نام فرستنده</span>
+                                </div>
+                            </div>
+                            <div class="float-left m-2" style="width: 20%;">
+                                <img src="image/trash bin orange.png" style="cursor: pointer;" width="36" alt="trash_bin_orange">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between bg-white f-foo p-1 p-sm-2 p-lg-3">
+                            <div class="foo d-flex w-100 justify-content-between">
+                                <div class=" fooo text-nowrap">
+                                    <span class="txt text-right text-wrap font-tickets">سلام .من محمد هادی عارفی هستم من از امروز دلم میخای جهان رو ترک کنکمسلام .من محمد هادی عارفی هستم من از امروز دلم میخای جهان رو ترک کنکم</span>
+                                    <span class="toggle text-primary  text-nowrap font-tickets"style="cursor: pointer;">&ApplyFunction; + ادامه</span>
+                                </div>
+                                <span class="time font-tickets p-1 p-sm-0">تاریخ</span>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+        
+        <!-- Drawer -->
+        <div class="drawer drawer-right slide" tabindex="-1" role="dialog" aria-labelledby="drawer-1-title" id="drawer-1" style="width: 260px; border: none !important; display: none;" aria-hidden="true">
+            <div class="drawer-content drawer-content-scrollable" role="document" style="border: none !important;width: 110% !important;">
+                <div class="drawer-body text-center mt-0 m-0 p-0 d-flex " style="width: 101% !important;">
+                    <div class="bg-white row no-gutters p-2  pb-lg-2 d-xs-flex d-sm-flex d-lg-none  mt-0 w-100 mb-0" id="image_mobile" style="margin-top: 0rem !important;width: 101% !important;">
+                        <div class="w-100 d-flex justify-content-center">
+                            <img src="./image/bill.jpg" class="user-img rounded-circle mt-4 mt-sm-3" id="image2">
+                        </div>
+                        <h5 class="UserName_txt text-nowrap text-white">
+                            امیر حسین میرزایی
+                        </h5>
+                        <div class="d-flex justify-content-between w-100">
+                            <p class="PhoneUnderName text-nowrap mt-2 " style="font-size: 15px;"> +98 09123456789</p>
+                        </div>
+                    </div>
+                    <div class="bg-white row no-gutters mt-0  d-flex d-lg-none bg-primary w-100" id="money" style="height: 470px; border:none;border-radius: 0px !important;">
+                        <ul class="w-100 d-flex justify-content-center flex-column align-items-center pt-2 m-0  w-100">
+                            <li class="w-100 d-flex justify-content-center flex-column align-items-center">
+                                <a href="#" class="d-flex align-items-center p-3 text-white">کالا ها</a>
+                            </li>
+                            <li class="w-100 d-flex justify-content-center flex-column align-items-center">
+                                <a href="#" class="d-flex align-items-center p-3 text-white">فاکتور ها</a>
+                            </li>
+                            <li class="w-100 d-flex justify-content-center flex-column align-items-center">
+                                <a href="#" class="d-flex align-items-center p-3 text-white" >درخواست ها</a>
+                            </li>
+                            <li class="w-100 d-flex justify-content-center flex-column align-items-center ">
+                                <a href="#" class="d-flex align-items-center p-3 text-white">مانیتورینگ</a>
+                            </li>
+                            <li class="w-100 d-flex justify-content-center flex-column align-items-center" >
+                                <a href="#" class="d-flex align-items-center p-3 text-white">اعلان ها</a>
+                            </li>
+                            <li class="w-100 d-flex justify-content-center flex-column align-items-center  bg-white">
+                                <a href="#" class="d-flex align-items-center p-3 text-white" style="color: #ffae00 !important;">تیکت ها</a>
+                            </li>
+                            <li class="w-100 d-flex justify-content-center flex-column align-items-center">
+                                <a href="#" class="d-flex align-items-center p-3 text-white">اطلاعات کاربری</a>
+                            </li>
+                            <li class="w-100 d-flex justify-content-center flex-column align-items-center">
+                                <a href="#" class="d-flex align-items-center p-3 text-white">خروج از حساب</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- end Drawer -->
-    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="./dist/js/bootstrap-drawer.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "saeed") {
-                x.className += "responsive";
-                // var element1 = document.getElementById("logo");
-                // element1.classList.add("d-flex");
-            } else {
-                var element1 = document.getElementById("logo");
-                element1.classList.add("d-none");
-                x.className = "saeed";
-            }
-        }
-
-        // drawer
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-36251023-1']);
-        _gaq.push(['_setDomainName', 'jqueryscript.net']);
-        _gaq.push(['_trackPageview']);
-
-        (function () {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-36251023-1']);
-        _gaq.push(['_setDomainName', 'jqueryscript.net']);
-        _gaq.push(['_trackPageview']);
-
-        (function () {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-        // end drawer
-    </script>
-
-    <script>
-        if (Array.prototype.forEach) Array.prototype.forEach = function (that) {
-            for (var i = 0; i < this.length; i++) that(this[i]);
-        };
-        NodeList.prototype.forEach = HTMLCollection.prototype.forEach = Array.prototype.forEach;
-        document.querySelectorAll('.foo').forEach(function (foo) {
-            var txt = foo.querySelector(".txt"),
-                toggle = foo.querySelector(".toggle");
-            if (txt.innerHTML.length > 10) {
-                txt.setAttribute('nextPart', txt.innerHTML.substr(10, txt.innerHTML.length));
-                txt.setAttribute('toggle', '1');
-                txt.innerHTML = txt.innerHTML.substr(0, 38) ;
-            }
-            toggle.addEventListener('click', function () {
-                if (txt.getAttribute('toggle') != null) {
-                    if (txt.getAttribute('toggle') === '1') {
-                        if ( txt.getAttribute('nextPart').length <= 38){
-                            txt.innerHTML = txt.innerHTML.substr(0, txt.innerHTML.length);
-                        }else{
-                            txt.innerHTML = txt.innerHTML.substr(0, txt.innerHTML.length - 28 ) + txt.getAttribute('nextPart');
-                        }
-                        
-                        txt.setAttribute('toggle', '0');
-                        toggle.innerHTML = " - بستن";
-                    } else {
-                        txt.innerHTML = txt.innerHTML.substr(0, 38) ;
-                        txt.setAttribute('toggle', '1');
-                        toggle.innerHTML = "&ApplyFunction; + ادامه";
-                    }
+        <!-- end Drawer -->
+        <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script src="./dist/js/bootstrap-drawer.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "saeed") {
+                    x.className += "responsive";
+                    // var element1 = document.getElementById("logo");
+                    // element1.classList.add("d-flex");
+                } else {
+                    var element1 = document.getElementById("logo");
+                    element1.classList.add("d-none");
+                    x.className = "saeed";
                 }
+            }
+
+            // drawer
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36251023-1']);
+            _gaq.push(['_setDomainName', 'jqueryscript.net']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36251023-1']);
+            _gaq.push(['_setDomainName', 'jqueryscript.net']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+            // end drawer
+        </script>
+
+        <script>
+            if (Array.prototype.forEach) Array.prototype.forEach = function (that) {
+                for (var i = 0; i < this.length; i++) that(this[i]);
+            };
+            NodeList.prototype.forEach = HTMLCollection.prototype.forEach = Array.prototype.forEach;
+            document.querySelectorAll('.foo').forEach(function (foo) {
+                var txt = foo.querySelector(".txt"),
+                    toggle = foo.querySelector(".toggle");
+                if (txt.innerHTML.length > 10) {
+                    txt.setAttribute('nextPart', txt.innerHTML.substr(10, txt.innerHTML.length));
+                    txt.setAttribute('toggle', '1');
+                    txt.innerHTML = txt.innerHTML.substr(0, 38) ;
+                }
+                toggle.addEventListener('click', function () {
+                    if (txt.getAttribute('toggle') != null) {
+                        if (txt.getAttribute('toggle') === '1') {
+                            if ( txt.getAttribute('nextPart').length <= 38){
+                                txt.innerHTML = txt.innerHTML.substr(0, txt.innerHTML.length);
+                            }else{
+                                txt.innerHTML = txt.innerHTML.substr(0, txt.innerHTML.length - 28 ) + txt.getAttribute('nextPart');
+                            }
+                            
+                            foo.classList.add("flex-column");
+
+                            txt.setAttribute('toggle', '0');
+                            toggle.innerHTML = " - بستن";
+                        } else {
+                            txt.innerHTML = txt.innerHTML.substr(0, 38) ;
+                            txt.setAttribute('toggle', '1');
+                            toggle.innerHTML = "&ApplyFunction; + ادامه";
+                            foo.classList.remove("flex-column");
+                        }
+                    }
+                });
             });
-        });
-    </script>
-</body></html>
+        </script>
+    </body>
+</html>

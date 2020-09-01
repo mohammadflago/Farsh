@@ -25,4 +25,20 @@ a {
 .bgc {
   background-color: #004b7d;
 }
+
+.w-f-t {
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .w-f-t {
+    width: 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  .font-tickets {
+    font-size: 12px;
+  }
+}
 /*# sourceMappingURL=Admin_Tickets.css.map */

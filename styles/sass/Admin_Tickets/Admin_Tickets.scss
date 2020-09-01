@@ -3,3 +3,16 @@
 .bgc{
     background-color: #004b7d;
 }
+.w-f-t{
+    width: 50%;
+    
+    @media (max-width: 1200px) {
+        width: 100%;
+    }
+}
+
+.font-tickets{
+    @media (max-width: 460px) {
+        font-size: 12px;
+    }
+}
