@@ -22,6 +22,58 @@ a {
   font-family: "MyFont";
 }
 
+.font {
+  font-size: 18px !important;
+}
+
+@media (max-width: 1600px) {
+  .font {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .font {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 996px) {
+  .font {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .font {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .font {
+    font-size: 3px !important;
+  }
+}
+
+@media (max-width: 996px) {
+  .font-nav-m {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .font-nav-m {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .font-nav-m {
+    font-size: 12px !important;
+  }
+}
+
 .c-container {
   padding-right: 200px;
   padding-left: 200px;

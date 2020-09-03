@@ -7,23 +7,23 @@
     <!-- bootstrap-drawer -->
     <link rel="stylesheet" href="dist/css/bootstrap-drawer.css">
     <!-- main css -->
-    <link rel="stylesheet" href="./styles/css/account_admin.css">
+
     <link rel="stylesheet" href="./styles/css/Nav_Bar.css">
-    <title>Admin_Account_information</title>
+    <title>Admin_Monitoring</title>
 
 
 
 </head>
 
 <body class="d-flex">
-    <header class="">
+    <header>
         <nav class="d-flex d-lg-none w-100 align-items-center fixed-top bg-white p-3">
             <img class="float-right nav-sm-icon" src="./image/nav-icon.png" alt="icon" data-toggle="drawer"
             data-target="#drawer-1" style="width: 40px; height: 30px;">
         </nav>
-        <aside class="d-none d-lg-flex flex-column w-25">
+        <aside class="d-none d-lg-flex flex-column">
             <!-- information admin -->
-            <div class="ml-4 bg-white row no-gutters p-2 mr-4 mt-5 pb-lg-2 d-none d-md-flex d-lg-flex d-xl-flex justify-content-center mb-3" id="image" style="height: 280px;margin-top: 2rem !important;border-radius: 1px !important;">
+            <div class="ml-4 bg-white row no-gutters p-2 mr-4 mt-5 pb-lg-2 d-none d-md-flex d-lg-flex d-xl-flex justify-content-center mb-3" id="image" style="height: 280px;margin-top: 2rem !important;">
                 <img src="./image/bill.jpg" class="user-img rounded-circle" id="image2">
                 <h5 class="UserName_txt text-nowrap text-white">
                     امیر حسین میرزایی
@@ -40,16 +40,16 @@
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d ;">&ApplyFunction;</li>
 
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
-                        <a href="#" class="d-flex align-items-center pb-3 pr-3 pl-3 pt-0 text-white">کالا ها</a>
+                        <a href="#" class="d-flex align-items-center p-3 text-white">کالا ها</a>
                     </li>
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
                         <a href="#" class="d-flex align-items-center p-3 text-white">فاکتور ها</a>
                     </li>
-                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;"b>
+                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;">
                         <a href="#" class="d-flex align-items-center p-3 text-white">درخواست ها</a>
                     </li>
-                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
-                        <a href="#" class="d-flex align-items-center p-3 text-white">مانیتورینگ</a>
+                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" >
+                        <a href="#" class="d-flex align-items-center p-3 text-white" style="color: #ffae00 !important;">مانیتورینگ</a>
                     </li>
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;"  >
                         <a href="#" class="d-flex align-items-center p-3 text-white">اعلان ها</a>
@@ -57,11 +57,11 @@
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
                         <a href="#" class="d-flex align-items-center p-3 text-white">تیکت ها</a>
                     </li>
-                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" >
-                        <a href="#" class="d-flex align-items-center p-3 text-white" style="color: #ffae00 !important;">اطلاعات کاربری</a>
+                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
+                        <a href="#" class="d-flex align-items-center p-3 text-white">اطلاعات کاربری</a>
                     </li>
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
-                        <a href="#" class="d-flex align-items-center pt-3 pl-3 pr-3 pb-0 text-white">خروج از حساب</a>
+                        <a href="#" class="d-flex align-items-center p-3 text-white">خروج از حساب</a>
                     </li>
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d ;">&ApplyFunction;</li>
                 </ul>
@@ -71,106 +71,26 @@
             <!-- end large aside bar -->
         </aside>
     </header>
-    <!-- main -->
-    <main class="main-mobail-pt w-100">
-        <section class="row width-fixed " style="padding-top: 25px;">
-            <!-- form -->
-            <form action="#" class="w-100 ml-2 mr-lg-5  bg-white"
-                style="border-radius: 1px;  margin-right: 40px;">
-                <!-- input file -->
-                <div class="col-12 mt-4 mb-3">
-                    <div class="d-flex flex-column rounded-circle">
-                        <img id="userimage" class="preview mx-auto" src="./image/user_img.png">
-                        <input id="upload" type="file" accept="image/*" />
-                    </div>
-                </div>
-                <!-- end input file -->
 
-                <!-- first and last name input -->
-                <div class="d-flex flex-lg-row flex-column w-100">
-                    <div class="form-group col-12 col-lg-6">
-                        <label class="w-100 font-list text-center">نام</label>
-                        <input type="text" class="form-control w-100"
-                            style="height: 55px; border-radius: 4px; border: 2px solid #d4d4d4 !important;"
-                            >
-                    </div>
-                    <div class="form-group col-12 col-lg-6">
-                        <label class="w-100 font-list text-center"> نام خانوادگی</label>
-                        <input type="text" class="form-control w-100"
-                            style="height: 55px; border-radius: 4px; border: 2px solid #d4d4d4 !important;"
-                            >
-                    </div>
-                </div>
-                <!-- end first and last name input -->
-
-                <!-- information admin -->
-                <div class="d-flex flex-lg-row flex-column w-100">
-                    <div class="form-group col-12 col-lg-6">
-                        <label class="w-100 font-list text-center">آدرس ایمیل</label>
-                        <input type="email" class="form-control w-100"
-                            style="height: 55px; border-radius: 4px; border: 2px solid #d4d4d4 !important;"
-                            >
-                    </div>
-                    <div class="form-group col-12 col-lg-6">
-                        <label class="w-100 font-list text-center">شماره موبایل</label>
-                        <input type="tel" class="form-control w-100"
-                            style="height: 55px; border-radius: 4px; border: 2px solid #d4d4d4 !important;"
-                            >
-                    </div>
-                </div>
-                <!-- end information admin -->
-
-                <!-- password input -->
-                <div class="d-flex flex-lg-row flex-column w-100">
-                    <div class="form-group col-12 col-lg-6">
-                        <label class="w-100 font-list text-center">رمز عبور</label>
-                        <input type="password" class="form-control w-100"
-                            style="height: 55px; border-radius: 4px; border: 2px solid #d4d4d4 !important;"
-                            >
-                    </div>
-                    <div class="form-group col-12 col-lg-6">
-                        <label class="w-100 font-list text-center">تکرار رمز عبور</label>
-                        <input type="password" class="form-control w-100"
-                            style="height: 55px; border-radius: 4px; border: 2px solid #d4d4d4 !important;"
-                            >
-                    </div>
-                </div>
-                <!-- end password input -->
-            </form>
-            <!-- end form -->
-
-            <!-- submit mtn -->
-            <div class="m-3 d-flex justify-content-center w-100">
-                <button class="btn pt-2 pb-2 mt-3 text-white btn-submit mr-3 w-25"
-                    style="font-size: 18px; background-color: #004b7d; border-radius: 1px !important; ">ثبت</button>
-                <button class="btn pt-2 pb-2 mt-3 btn-submit mr-3 w-25"
-                    style="font-size: 18px; background-color: transparent; border-radius: 1px !important; border: 2px solid #004b7d; color: #004b7d;">انصراف</button>
-            </div>
-            <!-- end submit mtn -->
-            
-
-        </section>
-    </main>
-    <!-- end main -->
 
     
     <!-- Drawer -->
     <div class="drawer drawer-right slide" tabindex="-1" role="dialog" aria-labelledby="drawer-1-title" id="drawer-1" style="width: 260px; border: none !important; display: none;" aria-hidden="true">
-        <div class="drawer-content drawer-content-scrollable" role="document" style="border: none !important;width: 100% !important;">
+        <div class="drawer-content drawer-content-scrollable" role="document" style="border: none !important;width: 110% !important;">
             <div class="drawer-body text-center mt-0 m-0 p-0 d-flex " style="width: 101% !important;">
-                <div class="bg-white row no-gutters p-2  pb-lg-2 d-xs-flex d-sm-flex d-lg-none  mt-0 w-100 mb-0" id="image_mobile" style="margin-top: 0rem !important;width: 100% !important;">
+                <div class="bg-white row no-gutters p-2  pb-lg-2 d-xs-flex d-sm-flex d-lg-none  mt-0 w-100 mb-0" id="image_mobile" style="margin-top: 0rem !important;width: 101% !important;">
                     <div class="w-100 d-flex justify-content-center">
                         <img src="./image/bill.jpg" class="user-img rounded-circle mt-4 mt-sm-3" id="image2">
                     </div>
-                    <h5 class="UserName_txt text-nowrap text-white w-100 text-center">
+                    <h5 class="UserName_txt text-nowrap text-white">
                         امیر حسین میرزایی
                     </h5>
                     <div class="d-flex justify-content-between w-100">
-                        <p class="PhoneUnderName text-nowrap mt-2 w-100 text-center" style="font-size: 15px;"> +98 09123456789</p>
+                        <p class="PhoneUnderName text-nowrap mt-2 " style="font-size: 15px;"> +98 09123456789</p>
                     </div>
                 </div>
                 <div class="bg-white row no-gutters mt-0  d-flex d-lg-none bg-primary w-100" id="money" style="height: 470px; border:none;border-radius: 0px !important;">
-                    <ul class="w-100 d-flex justify-content-center flex-column align-items-center pt-2 m-0  w-100"style="background-color: #004b7d ;">
+                    <ul class="w-100 d-flex justify-content-center flex-column align-items-center pt-2 m-0  w-100">
                         <li class="w-100 d-flex justify-content-center flex-column align-items-center">
                             <a href="#" class="d-flex align-items-center p-3 text-white">کالا ها</a>
                         </li>
@@ -180,8 +100,8 @@
                         <li class="w-100 d-flex justify-content-center flex-column align-items-center">
                             <a href="#" class="d-flex align-items-center p-3 text-white" >درخواست ها</a>
                         </li>
-                        <li class="w-100 d-flex justify-content-center flex-column align-items-center ">
-                            <a href="#" class="d-flex align-items-center p-3 text-white">مانیتورینگ</a>
+                        <li class="w-100 d-flex justify-content-center flex-column align-items-center  bg-white">
+                            <a href="#" class="d-flex align-items-center p-3 text-white" style="color: #ffae00 !important;">مانیتورینگ</a>
                         </li>
                         <li class="w-100 d-flex justify-content-center flex-column align-items-center" >
                             <a href="#" class="d-flex align-items-center p-3 text-white">اعلان ها</a>
@@ -189,8 +109,8 @@
                         <li class="w-100 d-flex justify-content-center flex-column align-items-center">
                             <a href="#" class="d-flex align-items-center p-3 text-white">تیکت ها</a>
                         </li>
-                        <li class="w-100 d-flex justify-content-center flex-column align-items-center bg-white">
-                            <a href="#" class="d-flex align-items-center p-3 text-white" style="color: #ffae00 !important;">اطلاعات کاربری</a>
+                        <li class="w-100 d-flex justify-content-center flex-column align-items-center">
+                            <a href="#" class="d-flex align-items-center p-3 text-white">اطلاعات کاربری</a>
                         </li>
                         <li class="w-100 d-flex justify-content-center flex-column align-items-center">
                             <a href="#" class="d-flex align-items-center p-3 text-white">خروج از حساب</a>
@@ -205,26 +125,6 @@
     <script src="./dist/js/bootstrap-drawer.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script>
-
-        // set profile image
-        $(".preview").click(function () {
-            $("#upload").click();
-        });
-
-        $("#upload").change(function () {
-            preview(this);
-        });
-
-        function preview(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function (e) {
-                    $('.preview').attr('src', e.target.result);
-                };
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-
         function myFunction() {
             var x = document.getElementById("myTopnav");
             if (x.className === "saeed") {

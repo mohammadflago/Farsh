@@ -13,7 +13,6 @@
     <title>Admin_Monitoring</title>
 
 
- 
 
 </head>
 
@@ -58,11 +57,20 @@
     <main class="main-mobail-pt d-flex" style="padding-top: 10px; ">
         <nav class="d-flex d-lg-none w-100 align-items-center fixed-top bg-white p-3">
             <img class="float-right nav-sm-icon" src="./image/nav-icon.png" alt="icon" data-toggle="drawer"
-            data-target="#drawer-1" style="width: 40px; height: 30px;">
+            data-target="#drawer-1" style="width: 30px; height: 20px;">
+            <!-- nav icon -->
+			<ul class="navbar-nav w-100 d-flex flex-row justify-content-center">
+				<li class="nav-item ml-3 ml-sm-5"><a href="#" class="nav-link navbar-color text-nowrap font-nav-m" style=" margin-right: 1.5rem;">خانه</a></li>
+				<li class="nav-item ml-3 ml-sm-5"><a href="#" class="nav-link navbar-color text-nowrap font-nav-m">فرش دستی</a></li>
+				<li class="nav-item ml-3 ml-sm-5"><a href="#" class="nav-link navbar-color text-nowrap font-nav-m">فرش ماشینی</a></li>
+				<li class="nav-item ml-3 ml-sm-5"><a href="#" class="nav-link navbar-color text-nowrap font-nav-m">تابلو فرش</a></li>
+			</ul>
+			<!-- end nav icon -->
+
         </nav>
         <aside class="d-none d-lg-flex flex-column">
             <!-- information admin -->
-            <div class="ml-4 bg-white row no-gutters p-2 mr-4 mt-5 pb-lg-2 d-none d-md-flex d-lg-flex d-xl-flex justify-content-center mb-3" id="image" style="height: 240px;margin-top: 2rem !important; background-color: #e3ab40 !important;">
+            <div class="ml-4 bg-white row no-gutters p-2 mr-4 mt-5 pb-lg-2 d-none d-md-flex d-lg-flex d-xl-flex justify-content-center mb-3" id="image" style="height: 240px;margin-top: 2rem !important; background-color: #e3ab40 !important;border-radius: 1px !important;">
                 <img src="./image/bill.jpg" class="user-img rounded-circle" id="image2">
                 <h5 class="UserName_txt text-nowrap text-white">
                     امیر حسین میرزایی
@@ -79,7 +87,7 @@
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #e3ab40 ;">&ApplyFunction;</li>
 
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #e3ab40;" >
-                        <a href="#" class="d-flex align-items-center p-3 text-white">سبد خرید</a>
+                        <a href="#" class="d-flex align-items-center pt-0 pb-3 pr-3 pl-0 text-white">سبد خرید</a>
                     </li>
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #e3ab40;" >
                         <a href="#" class="d-flex align-items-center p-3 text-white">سفارشات</a>
@@ -100,7 +108,7 @@
                         <a href="#" class="d-flex align-items-center p-3 text-white" >اطلاعات کاربری</a>
                     </li>
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #e3ab40;" >
-                        <a href="#" class="d-flex align-items-center p-3 text-white">خروج از حساب</a>
+                        <a href="#" class="d-flex align-items-center pt-3 pb-0 pr-3 pl-0 text-white">خروج از حساب</a>
                     </li>
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #e3ab40 ;">&ApplyFunction;</li>
                 </ul>
@@ -109,9 +117,9 @@
 
             <!-- end large aside bar -->
         </aside>
-        <section class="w-100 p-4 mt-1">
+        <section class="ml-lg-4 w-100 p-4 mt-1">
             <!-- form -->
-            <form action="#" class="bg-white pr-2 pr-sm-5 pb-5 jkjezdfv ml-sm-5" style=" flex-wrap: wrap;    display: flex;border-radius: 4px; border: 1px solid #eeeeee !important;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.055), 0 6px 20px 0 rgba(0, 0, 0, 0.1);">
+            <form action="#" class="bg-white pr-2 pr-sm-5 pb-5 jkjezdfv ml-sm-5" style=" flex-wrap: wrap;    display: flex;border-radius: 1px;">
                 <!-- right inputs     -->
                 <div class="col-12 col-xl-6 row">
                     <!-- file input -->
@@ -177,22 +185,22 @@
 
                     <!-- Postal address input -->
                     <div class="col-12 mt-4   mt-lg-5 mt-xl-1">
-                        <label class="font-list w-100 text-center  mt-2">آدرس پستی</label>
+                        <label class="font-list w-100 text-center  mt-lg-2">آدرس پستی</label>
                         <textarea class="font-list form-control font-list w-100 text-center pt-3 pr-4" style="height:165px; border-radius: 4px; border: 1px solid #d4d4d4 !important;"></textarea>
                     </div>
                     <!-- end Postal address input -->
 
                     <!-- email input -->
                     <div class="col-12 col-xl-6 input-p-s-l ">
-                        <label class="font-list w-100 text-center mt-2">آدرس ایمیل</label>
-                        <input type="email" class="form-control font-list w-100 mt-1" style="border-radius: 1px !important; height: 45px; border-radius: 4px; border: 1px solid #d4d4d4 !important;">
+                        <label class="font-list w-100 text-center mt-lg-3">رمز عبور</label>
+                        <input type="password" class="form-control font-list w-100 mt-1" style="border-radius: 1px !important; height: 45px; border-radius: 4px; border: 1px solid #d4d4d4 !important;">
                     </div>
                     <!-- end email input -->
 
                     <!-- Postaly code input -->
                     <div class="col-12 col-xl-6 input-p-s-r mt-4 mt-xl-1">
-                        <label class="font-list w-100 text-center mt-2">کد پستی</label>
-                        <input type="text" class="form-control font-list w-100" style="border-radius: 1px !important; height: 45px; border-radius: 4px; border: 1px solid #d4d4d4 !important;">
+                        <label class="font-list w-100 text-center mt-2">تکرار رمز عبور</label>
+                        <input type="password" class="form-control font-list w-100" style="border-radius: 1px !important; height: 45px; border-radius: 4px; border: 1px solid #d4d4d4 !important;">
                     </div>
                     <!-- end Postaly code input -->
                 </div>
@@ -214,15 +222,15 @@
     <div class="drawer drawer-right slide" tabindex="-1" role="dialog" aria-labelledby="drawer-1-title" id="drawer-1" style="width: 260px; border: none !important; display: none;" aria-hidden="true">
         <div class="drawer-content drawer-content-scrollable" role="document" style="border: none !important;width: 110% !important;">
             <div class="drawer-body text-center mt-0 m-0 p-0 d-flex " style="width: 101% !important;">
-                <div class="bg-white row no-gutters p-2  pb-lg-2 d-xs-flex d-sm-flex d-lg-none  mt-0 w-100 mb-0" id="image_mobile" style="margin-top: 0rem !important;width: 101% !important;">
+                <div class="bg-white row no-gutters p-2  pb-lg-2 d-xs-flex d-sm-flex d-lg-none  mt-0 w-100 mb-0" id="image_mobile" style="margin-top: 0rem !important;width: 101% !important;background-color: #e3ab40 !important;">
                     <div class="w-100 d-flex justify-content-center">
                         <img src="./image/bill.jpg" class="user-img rounded-circle mt-4 mt-sm-3" id="image2">
                     </div>
-                    <h5 class="UserName_txt text-nowrap text-white">
+                    <h5 class="UserName_txt text-nowrap text-white w-100 text-center">
                         امیر حسین میرزایی
                     </h5>
                     <div class="d-flex justify-content-between w-100">
-                        <p class="PhoneUnderName text-nowrap mt-2 " style="font-size: 15px;"> +98 09123456789</p>
+                        <p class="PhoneUnderName text-nowrap mt-2 w-100 text-center" style="font-size: 15px;"> +98 09123456789</p>
                     </div>
                 </div>
                 <div class="bg-white row no-gutters mt-0  d-flex d-lg-none bg-primary w-100" id="money" style="height: 470px; border:none;border-radius: 0px !important;background-color: #e3ab40 !important;">

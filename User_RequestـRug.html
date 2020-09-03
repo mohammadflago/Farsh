@@ -57,11 +57,20 @@
     <main class="main-mobail-pt d-flex" style="padding-top: 10px; ">
         <nav class="d-flex d-lg-none w-100 align-items-center fixed-top bg-white p-3">
             <img class="float-right nav-sm-icon" src="./image/nav-icon.png" alt="icon" data-toggle="drawer"
-            data-target="#drawer-1" style="width: 40px; height: 30px;">
+            data-target="#drawer-1" style="width: 30px; height: 20px;">
+            <!-- nav icon -->
+			<ul class="navbar-nav w-100 d-flex flex-row justify-content-center">
+				<li class="nav-item ml-3 ml-sm-5"><a href="#" class="nav-link navbar-color text-nowrap font-nav-m" style=" margin-right: 1.5rem;">خانه</a></li>
+				<li class="nav-item ml-3 ml-sm-5"><a href="#" class="nav-link navbar-color text-nowrap font-nav-m">فرش دستی</a></li>
+				<li class="nav-item ml-3 ml-sm-5"><a href="#" class="nav-link navbar-color text-nowrap font-nav-m">فرش ماشینی</a></li>
+				<li class="nav-item ml-3 ml-sm-5"><a href="#" class="nav-link navbar-color text-nowrap font-nav-m">تابلو فرش</a></li>
+			</ul>
+			<!-- end nav icon -->
+
         </nav>
         <aside class="d-none d-lg-flex flex-column">
             <!-- information admin -->
-            <div class="ml-4 bg-white row no-gutters p-2 mr-4 mt-5 pb-lg-2 d-none d-md-flex d-lg-flex d-xl-flex justify-content-center mb-3" id="image" style="height: 240px;margin-top: 2rem !important; background-color: #e3ab40 !important;">
+            <div class="ml-4 bg-white row no-gutters p-2 mr-4 mt-5 pb-lg-2 d-none d-md-flex d-lg-flex d-xl-flex justify-content-center mb-3" id="image" style="height: 240px;margin-top: 2rem !important; background-color: #e3ab40 !important;border-radius: 1px !important;">
                 <img src="./image/bill.jpg" class="user-img rounded-circle" id="image2">
                 <h5 class="UserName_txt text-nowrap text-white">
                     امیر حسین میرزایی
@@ -78,7 +87,7 @@
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #e3ab40 ;">&ApplyFunction;</li>
 
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #e3ab40;" >
-                        <a href="#" class="d-flex align-items-center p-3 text-white">سبد خرید</a>
+                        <a href="#" class="d-flex align-items-center pt-0 pb-3 pr-3 pl-0 text-white">سبد خرید</a>
                     </li>
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #e3ab40;" >
                         <a href="#" class="d-flex align-items-center p-3 text-white">سفارشات</a>
@@ -99,7 +108,7 @@
                         <a href="#" class="d-flex align-items-center p-3 text-white" >اطلاعات کاربری</a>
                     </li>
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #e3ab40;" >
-                        <a href="#" class="d-flex align-items-center p-3 text-white">خروج از حساب</a>
+                        <a href="#" class="d-flex align-items-center pt-3 pb-0 pr-3 pl-0 text-white">خروج از حساب</a>
                     </li>
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #e3ab40 ;">&ApplyFunction;</li>
                 </ul>
@@ -176,7 +185,25 @@
             }
         }
 
-    
+        // set profile image
+        $(".preview").click(function () {
+                    $("#upload").click();
+                });
+
+                $("#upload").change(function () {
+                    preview(this);
+                });
+
+                function preview(input) {
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                            $('.preview').attr('src', e.target.result);
+                        };
+                        reader.readAsDataURL(input.files[0]);
+                    }
+                }
+
         // drawer
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-36251023-1']);
