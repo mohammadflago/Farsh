@@ -15,6 +15,49 @@
 	<link rel="stylesheet" href="styles/css/Home.css">
 	<link rel="stylesheet" href="styles/css/Nav_Bar.css">
 
+	<style>
+		html,
+		body {
+		  position: relative;
+		  height: 100%;
+		}
+	
+		body {
+		  background: #eee;
+		  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+		  font-size: 14px;
+		  color: #000;
+		  margin: 0;
+		  padding: 0;
+		}
+	
+		.swiper-container {
+		  width: 100%;
+		  height: 100%;
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+	
+		.swiper-slide {
+		  text-align: center;
+		  font-size: 18px;
+		  background: #fff;
+	
+		  /* Center slide text vertically */
+		  display: -webkit-box;
+		  display: -ms-flexbox;
+		  display: -webkit-flex;
+		  display: flex;
+		  -webkit-box-pack: center;
+		  -ms-flex-pack: center;
+		  -webkit-justify-content: center;
+		  justify-content: center;
+		  -webkit-box-align: center;
+		  -ms-flex-align: center;
+		  -webkit-align-items: center;
+		  align-items: center;
+		}
+	  </style>
 	<title>Document</title>
 </head>
 <body>
@@ -59,18 +102,18 @@
 	<!-- main context -->
 	<main>
 		<!-- slider -->
-		<div class="d-flex align-items-center top-slide" >
+		<div class="d-flex align-items-center top-slide swiper-container" >
 			<!-- next icon -->
-			<div class="p-3 pr-lg-5 pl-lg-4 pt-lg-3">
-				<img src="image/back-1@2x.png" class="slide-next-back-icon" alt="">
+			<div class="p-3 pr-lg-5 pl-lg-4 pt-lg-3 swiper-button-next">
+				<img src="image/back-1@2x.png" class="slide-next-back-icon " alt="">
 			</div>
 			<!-- end next icon -->
 
 			<!-- contents slide -->
 
-			<div id="slide-p">
+			<div id="swiper-wrapper">
 
-				<span class="slide-t align-items-center d-none d-flex">
+				<span class="swiper-slide align-items-center  d-flex">
 					<!-- main image slide -->
 					<div class="w-100">
 						<img src="image/Carpet-Download-Transparent-PNG-Image@2x.png" class="w-100" alt="">
@@ -97,7 +140,7 @@
 				</span>
 
 
-				<span class=" slide-t align-items-center d-none">
+				<span class=" swiper-slide align-items-center ">
 					<!-- main image slide -->
 					<div class="w-100">
 						<img src="image/Carpet-Download-Transparent-PNG-Image@2x.png" class="w-100" alt="">
@@ -124,7 +167,7 @@
 				</span>
 
 
-				<span class="slide-t align-items-center d-none">
+				<span class="swiper-slide align-items-center ">
 					<!-- main image slide -->
 					<div class="w-100">
 						<img src="image/Carpet-Download-Transparent-PNG-Image@2x.png" class="w-100" alt="">
@@ -153,8 +196,8 @@
 			</div>
 			<!-- end contents slide -->
 
-			<div class="p-3 pl-lg-5 pr-lg-4 pt-lg-3">
-				<img src="image/back@2x.png" class="slide-next-back-icon" id="back-slide" alt="">
+			<div class="p-3 pl-lg-5 pr-lg-4 pt-lg-3 swiper-button-prev">
+				<img src="image/back@2x.png" class="slide-next-back-icon " id="back-slide" alt="">
 			</div>
 		</div>
 		<!-- end slider -->
@@ -328,6 +371,21 @@
 	<script src="./dist/js/bootstrap-drawer.js"></script>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+		  slidesPerView: 1,
+		  spaceBetween: 30,
+		  loop: true,
+		  pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		  },
+		  navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		  },
+		});
+	  </script>
 	<script>
 		// $("#next-slide").click(function(){
 		// 	if($('.slide-t').next('span').length == 2){

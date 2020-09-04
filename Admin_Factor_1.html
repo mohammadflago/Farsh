@@ -23,7 +23,7 @@
         </nav>
         <aside class="d-none d-lg-flex flex-column">
             <!-- information admin -->
-            <div class="ml-4 bg-white row no-gutters p-2 mr-4 mt-5 pb-lg-2 d-none d-md-flex d-lg-flex d-xl-flex justify-content-center mb-3" id="image" style="height: 280px;margin-top: 2rem !important;">
+            <div class="ml-4 bg-white row no-gutters p-2 mr-4 mt-5 pb-lg-2 d-none d-md-flex d-lg-flex d-xl-flex justify-content-center mb-3" id="image" style="height: 280px;margin-top: 2rem !important;border-radius: 1px !important;">
                 <img src="./image/bill.jpg" class="user-img rounded-circle" id="image2">
                 <h5 class="UserName_txt text-nowrap text-white">
                     امیر حسین میرزایی
@@ -40,7 +40,7 @@
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d ;">&ApplyFunction;</li>
 
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
-                        <a href="#" class="d-flex align-items-center p-3 text-white">کالا ها</a>
+                        <a href="#" class="d-flex align-items-center pb-3 pt-0 text-white">کالا ها</a>
                     </li>
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
                         <a href="#" class="d-flex align-items-center p-3 text-white">فاکتور ها</a>
@@ -61,7 +61,7 @@
                         <a href="#" class="d-flex align-items-center p-3 text-white">اطلاعات کاربری</a>
                     </li>
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
-                        <a href="#" class="d-flex align-items-center p-3 text-white">خروج از حساب</a>
+                        <a href="#" class="d-flex align-items-center pt-3 pb-0 text-white">خروج از حساب</a>
                     </li>
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d ;">&ApplyFunction;</li>
                 </ul>
@@ -72,7 +72,32 @@
         </aside>
     </header>
 
-
+    <main class="d-flex w-100 pl-2 pr-2 pr-lg-0 pl-lg-3 pt-3">
+        <div class="w-100 mt-5 pt-5 pt-lg-0 mt-lg-3">
+            <table class="d-flex flex-column w-100">
+                <thead class="w-100 bg-primary">
+                    <tr class="d-flex justify-content-around align-items-center justify-content-center">
+                        <th class="p-3 w-100 text-center font">کد سفارش</th>
+                        <th class="p-3 w-100 text-center font">کد خریدار</th>
+                        <th class="p-3 w-100 text-center font">قیمت (قیمت)</th>
+                        <th class="p-3 w-100 text-center font">تاریخ و ساعت</th>
+                        <th class="p-3 w-100 text-center font">وضعیت</th>
+                        <th class="p-3 w-100 text-center font">جزعیات</th>
+                    </tr>
+                </thead>
+                <tbody class="w-100">
+                    <tr class="d-flex justify-content-around align-items-center justify-content-center">
+                        <td class="p-3 w-100 text-center font">4123</td>
+                        <td class="p-3 w-100 text-center font">23</td>
+                        <td class="p-3 w-100 text-center font">۵۴۰۰۰۰۰۰</td>
+                        <td class="p-3 w-100 text-center font">۱۳۷۷/۴/۲ <br> &nbsp;&nbsp;&nbsp; 19:30 </td>
+                        <td class="p-3 w-100 text-center font">در انتظار تایید</td>
+                        <td class="p-3 w-100 text-center font">bg</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
     
     <!-- Drawer -->
     <div class="drawer drawer-right slide" tabindex="-1" role="dialog" aria-labelledby="drawer-1-title" id="drawer-1" style="width: 260px; border: none !important; display: none;" aria-hidden="true">
