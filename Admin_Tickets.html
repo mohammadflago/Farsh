@@ -99,7 +99,7 @@
                         </div>
                         <div class="d-flex justify-content-between bg-white f-foo p-1 p-sm-2 p-lg-3">
                             <div class="foo d-flex w-100 justify-content-between">
-                                <div class=" fooo text-nowrap">
+                                <div class=" fooo text-nowrap d-flex ">
                                     <span class="txt text-right text-wrap font-tickets">سلام .من محمد هادی عارفی هستم من از امروز دلم میخای جهان رو ترک کنکمسلام .من محمد هادی عارفی هستم من از امروز دلم میخای جهان رو ترک کنکم</span>
                                     <span class="toggle text-primary  text-nowrap font-tickets"style="cursor: pointer;">&ApplyFunction; + ادامه</span>
                                 </div>
@@ -224,14 +224,23 @@
                             }
                             
                             foo.classList.add("flex-column");
+                            var fooo = foo.querySelector(".fooo");
+                            fooo.classList.add("flex-column");
+                            
 
                             txt.setAttribute('toggle', '0');
                             toggle.innerHTML = " - بستن";
+                            toggle.classList.add("w-100");
+                            toggle.classList.add("text-right");
                         } else {
                             txt.innerHTML = txt.innerHTML.substr(0, 38) ;
                             txt.setAttribute('toggle', '1');
                             toggle.innerHTML = "&ApplyFunction; + ادامه";
                             foo.classList.remove("flex-column");
+                            var fooo = foo.querySelector(".fooo");
+                            fooo.classList.remove("flex-column");
+                            toggle.classList.remove("w-100");
+                            toggle.classList.remove("text-right");
                         }
                     }
                 });

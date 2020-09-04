@@ -13,48 +13,31 @@
     <title>Admin_Login</title>
 </head>
 
-<body>
+<body class="w-100">
 
-    <div class="container pb-5">
-        <header>
-            <div class="help_div d-flex  justify-content-center align-items-strart align-items-sm-center  ">
-                <img src="image/فرش عاطفی@2x.png" class="img_logo logo-top-width-f" alt="logo">
+    <main class="w-100 pt-5">
+        <div class="w-100  d-flex justify-content-center align-content-center align-items-center flex-column pt-5">
+            <div class="mb-5 w-75 d-flex justify-content-center mt-5">
+                <img src="image/فرش عاطفی@2x.png" class="w-f-main" alt="logo">
             </div>
-        </header>
-
-        <section>
-            <div class="inputs_section row d-flex mx-auto  justify-content-center" >
-                <div class="inputs_div col-12 col-md-7 col-lg-6 col-xl-5 mt-5" style="height: 380px;border-radius: 1px !important;">
-                    <h5 class="inputs_lbl text-right text-center" id="username">شماره مبایل</h5>
-                    <!-- username -->
-                    <div class="input-group pr-2">
-                        <input type="tel" class="pr-3"  />
-                    </div>
-                    <!-- end  username -->
-
-                    <h5 class="inputs_lbl text-right mt-4 text-center" id="username"> رمز عبور</h5>
-                    <!-- password -->
-                    <div class="input-group mt-2 pr-1">
-                        <input type="password" class="pr-3 d-flex flex-nowrap" />
-                    </div>
-                    <!-- end password -->
-
-                    <!-- forgot password -->
-                    <a href="# " class="text-decoration-none">
-                        <h6 class="forgot_pass mt-4 text-center">رمز عبور را فراموش کرده ام ؟</h6>
-                    </a>
-                    <!-- forgot pasword -->
-
-                    <!-- enter button -->
-                    <button class="enterbutton btn btn-block mx-auto w-100 mt-4" style="border-radius: 1px !important;" type="submit">
-                        ورود</button>
-                    <!-- end enter button -->
+            <form class="bg-white d-flex flex-column help_div inputs_section p-3 inputs_div w-f-main mt-5">
+                <div>
+                    <label class="w-100 text-center">شماره مبایل</label>
+                    <input class="input-group input" style="border: 1px solid #aaaaaa !important;" type="tel">
                 </div>
-            </div>
-        </section>
-
-    </div>
-
+                <div class="mt-3">
+                    <label class="w-100 text-center">رمز عبور</label>
+                    <input class="input-group input" style="border: 1px solid #aaaaaa !important;" type="password">
+                </div>
+                <div class="w-100 d-flex justify-content-center mt-3">
+                    <a href="#">
+                        رمزم را فراموش کرده ام ؟
+                    </a>
+                </div>
+                    <button type="submit" class="enterbutton d-flex justify-content-center w-100 pt-0 mt-3">ثبت نام</button>
+            </form>
+        </div>
+    </main>
 </body>
 
 </html>
