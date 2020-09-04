@@ -46,19 +46,19 @@ a {
 
 @media (max-width: 500px) {
   .font {
-    font-size: 10px !important;
+    font-size: 20px !important;
   }
 }
 
 @media (max-width: 450px) {
   .font {
-    font-size: 10px !important;
+    font-size: 20px !important;
   }
 }
 
 @media (max-width: 400px) {
   .font {
-    font-size: 10px !important;
+    font-size: 20px !important;
   }
 }
 
@@ -110,19 +110,19 @@ a {
 
 @media (max-width: 500px) {
   .font {
-    font-size: 10px !important;
+    font-size: 20px !important;
   }
 }
 
 @media (max-width: 450px) {
   .font {
-    font-size: 10px !important;
+    font-size: 20px !important;
   }
 }
 
 @media (max-width: 400px) {
   .font {
-    font-size: 10px !important;
+    font-size: 20px !important;
   }
 }
 
