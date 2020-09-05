@@ -135,6 +135,24 @@ a {
   }
 }
 
+@media (max-width: 450px) {
+  .font-bx {
+    padding: 2px !important;
+    font-size: 8px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .font-bx {
+    padding: 2px !important;
+    font-size: 8px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
 .font-b {
   font-size: 18px !important;
 }
@@ -200,7 +218,31 @@ a {
   font-size: 16px !important;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1600px) {
+  .font-p {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 1472px) {
+  .font-p {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 1371px) {
+  .font-p {
+    font-size: 9px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .font-p {
+    font-size: 9px !important;
+  }
+}
+
+@media (max-width: 990px) {
   .font-p {
     font-size: 14px !important;
   }
