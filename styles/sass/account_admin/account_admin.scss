@@ -27,7 +27,7 @@
 }
 
 .main-mobail-pt {
-  @media (min-width: 996px) {
+  @media (min-width: 991px) {
     padding-top: 5px;
   }
   padding-top: 50px;
@@ -47,14 +47,6 @@
   }
 
   @media (max-width: 1400px) {
-    width: 70% !important;
-  }
-
-  @media (max-width: 1000px) {
-    width: 100% !important;
-  }
-
-  @media (max-width: 767px) {
     width: 100% !important;
   }
 }

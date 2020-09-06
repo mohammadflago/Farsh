@@ -308,7 +308,7 @@ a {
   padding-top: 50px;
 }
 
-@media (min-width: 996px) {
+@media (min-width: 991px) {
   .main-mobail-pt {
     padding-top: 5px;
   }
@@ -332,18 +332,6 @@ a {
 }
 
 @media (max-width: 1400px) {
-  .width-fixed {
-    width: 70% !important;
-  }
-}
-
-@media (max-width: 1000px) {
-  .width-fixed {
-    width: 100% !important;
-  }
-}
-
-@media (max-width: 767px) {
   .width-fixed {
     width: 100% !important;
   }
