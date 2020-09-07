@@ -7,6 +7,7 @@
     <!-- bootstrap-drawer -->
     <link rel="stylesheet" href="dist/css/bootstrap-drawer.css">
     <!-- main css -->
+    <link rel="stylesheet" href="./styles/css/Admin_Commoditys.css">
     <link rel="stylesheet" href="./styles/css/Nav_Bar.css">
     <title>Admin_Monitoring</title>
 
@@ -73,7 +74,7 @@
 <br>
 
         <div class="w-100 m-1 bg-white mr-4 mb-5" style="width: 300px !important;">
-            <p class="w-100 text-right p-4 " style="color: #d19005;font-size: 14px !important;">
+            <p class="w-100 text-right p-4 " style="color: #d19005;font-size: 13px !important;">
             توجه :
 <br>
  
@@ -146,30 +147,40 @@
             </div>
             <div class="d-flex flex-column mt-4 w-100 ml-p pl-0">
                 <div class=" d-flex  w-100  justify-content-center justify-content-xl-start" style="max-height: 365px;">
-                    <div style="background-color: #e9f6ff;width: 58%;" class="d-flex p-1 p-lg-4 ml-2 ml-lg-4 big-img">
+                    <div class="position-absolute d-flex justify-content-end p-3 delete-fiexd-1" >
+                        <img src="image/iconfinder_delete_1772623.png" width="40px" class="position-absolute delete-img-1 " onclick="de()" alt="">
+                    </div>
+                    <!-- <div class="position-absolute d-flex justify-content-end p-2 pt-sm-3 delete-fiexd-2">
+                        <img src="image/iconfinder_delete_1772623.png" class="position-absolute delete-img-2 " alt="">
+                    </div> -->
+                    <div style="background-color: #e9f6ff;width: 58%;" class="d-flex p-1 p-lg-4 ml-2 ml-lg-4 big-img d-flex justify-content-center align-items-center">
+                        
                         <img class="preview2 w-100 h-100" src="image/img.png"/>
-                        <img src="image/carpet_PNG57687@2x.png" width="20px" class="position-absolute delete-img" style="top: 90px; left: 20%;" alt="">
+                        
                         <input id="upload1" class="d-none" type="file" accept="image/*" />
                     </div>
                     <div style="width: 7%;"></div>
                     <div class="d-flex  flex-column " style="width: 27%;">
-                        <div style="background-color: #e9f6ff;" class="mb-2 w-100 p-1 p-lg-4 h-100">
+                        <div style="background-color: #e9f6ff;" class="mb-2 w-100 p-1 p-lg-4 h-100 d-flex justify-content-center align-items-center">
                             <img class="preview3 h-100" style="width: 100%;max-height:130px" src="image/img1.png"/>
                             <input id="upload2" class="d-none h-100" type="file" accept="image/*" />
                         </div>
-                        <div style="background-color: #e9f6ff;" class="w-100 p-1 p-lg-4 h-100">
+                        <div style="background-color: #e9f6ff;" class="w-100 p-1 p-lg-4 h-100 d-flex justify-content-center align-items-center">
                             <img class="preview4 h-100" style="width: 100%;max-height:130px" src="image/img1.png"/>
                             <input id="upload3" class="d-none h-100" type="file" accept="image/*" />
                         </div>
                     </div>
+                    
+                    
+                    
                 </div>
-                <div class="w-100 d-flex flex-column flex-lg-row pt-2" style="margin-top: 13px;">
+                <div class="w-100 d-flex flex-column flex-lg-row pt-2" style="margin-top: 6px;">
                     <div class="d-flex flex-column align-items-center w-100 ml-xl-0 mr-xl-0">
-                        <lable class="mb-3 mb-lg-3 mt-3 mt-lg-0">ارتفاع نخ خاب</lable>
+                        <lable class="mb-3 mb-lg-2 mt-2 mt-lg-0">ارتفاع نخ خاب</lable>
                         <input type="text" class="form-control align-self-center align-self-xl-start" style="width: 90%; border-radius: 1px !important;border: 1px solid #aaaaaa !important;">
                     </div>
                     <div class="d-flex flex-column align-items-center w-100 ml-xl-0 mr-xl-0">
-                        <lable class="mb-3 mb-lg-3 mt-3 mt-lg-0">رنگ زمینه</lable>
+                        <lable class="mb-3 mb-lg-2 mt-3 mt-lg-0">رنگ زمینه</lable>
                         <input type="text" class="form-control align-self-center align-self-xl-start" style="width: 90%;border-radius: 1px !important;border: 1px solid #aaaaaa !important;">
                     </div>
                 </div>
@@ -275,7 +286,9 @@
         // end drawer
     </script>
     <script>
-         $(".delete-img").hide();
+         $(".delete-img-1").hide();
+         $(".delete-img-2").hide();
+         $(".delete-img-3").hide();
         // set profile image
         $(".preview2").click(function () {
             $("#upload1").click();
@@ -285,9 +298,10 @@
             preview2(this);
             $(".big-img").removeClass("p-lg-4");
             $(".big-img").addClass("p-lg-5");
-            $(".delete-img").fadeIn();
+            $(".delete-img-1").fadeIn();
             
         });
+
 
         function preview2(input) {
             if (input.files && input.files[0]) {
@@ -299,15 +313,23 @@
             }
         }
 
+       function de() {
+            $(".preview2").attr("src" , "image/img.png");
+            $(".delete-img-1").hide();
+            $(".big-img").addClass("p-lg-4");
+            $(".big-img").removeClass("p-lg-5");
+        }
 
 
 
         $(".preview3").click(function () {
             $("#upload2").click();
+            
         });
 
         $("#upload2").change(function () {
             preview3(this);
+            
         });
 
         function preview3(input) {
@@ -322,12 +344,15 @@
 
 
 
+
+
         $(".preview4").click(function () {
             $("#upload3").click();
         });
 
         $("#upload3").change(function () {
             preview4(this);
+
         });
 
         function preview4(input) {

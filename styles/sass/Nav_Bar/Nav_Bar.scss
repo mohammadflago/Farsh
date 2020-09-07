@@ -1,5 +1,11 @@
 @import "../base";
 
+.PhoneUnderName {
+font-size: 12px !important;
+}
+.UserName_txt{
+  font-size: 16px !important;
+}
 .font-nav-m{
   @media (max-width: 996px) {
     font-size: 16px !important;

@@ -1,0 +1,417 @@
+body {
+  background-image: url("../../image/4694@2x.png");
+  background-size: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("../../fonts/IRANYekanRegular.ttf");
+}
+
+a {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MyFont";
+}
+
+.font {
+  font-size: 18px !important;
+}
+
+@media (max-width: 1600px) {
+  .font {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .font {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 996px) {
+  .font {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .font {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .font {
+    font-size: 8px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .font {
+    font-size: 5px !important;
+  }
+}
+
+.font-x {
+  font-size: 18px !important;
+}
+
+@media (max-width: 1600px) {
+  .font-x {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .font-x {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 996px) {
+  .font-x {
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .font-x {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .font-x {
+    padding: 3px !important;
+    font-size: 12px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .font-x {
+    padding: 3px !important;
+    font-size: 10px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .font-x {
+    padding: 3px !important;
+    font-size: 8px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .font-x {
+    padding: 2px !important;
+    font-size: 6px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .font-x {
+    padding: 2px !important;
+    font-size: 5px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .font-bx {
+    padding: 2px !important;
+    font-size: 8px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .font-bx {
+    padding: 2px !important;
+    font-size: 8px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+.font-b {
+  font-size: 18px !important;
+}
+
+@media (max-width: 1600px) {
+  .font-b {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .font-b {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .font-b {
+    padding: 15px !important;
+    font-size: 14px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .font-b {
+    padding: 15px !important;
+    font-size: 13px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .font-b {
+    padding: 15px !important;
+    font-size: 12px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .font-b {
+    padding: 15px !important;
+    font-size: 10px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .font-b {
+    padding: 15px !important;
+    font-size: 8px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+.font-p {
+  font-size: 16px !important;
+}
+
+@media (max-width: 1600px) {
+  .font-p {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 1472px) {
+  .font-p {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 1371px) {
+  .font-p {
+    font-size: 9px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .font-p {
+    font-size: 9px !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .font-p {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .font-p {
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .font-p {
+    font-size: 12px !important;
+  }
+}
+
+.delete-fiexd-1 {
+  width: 23%;
+}
+
+@media (max-width: 1668px) {
+  .delete-fiexd-1 {
+    width: 22%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .delete-fiexd-1 {
+    width: 21%;
+  }
+}
+
+@media (max-width: 1246px) {
+  .delete-fiexd-1 {
+    width: 20%;
+  }
+}
+
+@media (max-width: 1198px) {
+  .delete-fiexd-1 {
+    width: 15%;
+  }
+}
+
+@media (max-width: 990px) {
+  .delete-fiexd-1 {
+    width: 23%;
+  }
+}
+
+.delete-fiexd-2 {
+  width: 37%;
+}
+
+@media (max-width: 1668px) {
+  .delete-fiexd-2 {
+    width: 36%;
+  }
+}
+
+@media (max-width: 1527px) {
+  .delete-fiexd-2 {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .delete-fiexd-2 {
+    width: 34%;
+  }
+}
+
+@media (max-width: 1246px) {
+  .delete-fiexd-2 {
+    width: 33%;
+  }
+}
+
+@media (max-width: 1198px) {
+  .delete-fiexd-2 {
+    width: 62%;
+  }
+}
+
+@media (max-width: 1093px) {
+  .delete-fiexd-2 {
+    width: 59%;
+  }
+}
+
+@media (max-width: 990px) {
+  .delete-fiexd-2 {
+    width: 90%;
+  }
+}
+
+.delete-img-2 {
+  width: 20px !important;
+}
+
+@media (max-width: 500px) {
+  .delete-img-2 {
+    width: 15px !important;
+  }
+}
+
+.delete-img-3 {
+  width: 20px !important;
+}
+
+@media (max-width: 500px) {
+  .delete-img-3 {
+    width: 15px !important;
+  }
+}
+
+.delete-img-3 {
+  left: 4%;
+  top: 27%;
+}
+
+@media (max-width: 1800px) {
+  .delete-img-3 {
+    top: 33%;
+  }
+}
+
+@media (max-width: 1668px) {
+  .delete-img-3 {
+    top: 30%;
+  }
+}
+
+@media (max-width: 1527px) {
+  .delete-img-3 {
+    top: 28%;
+  }
+}
+
+@media (max-width: 1380px) {
+  .delete-img-3 {
+    top: 26%;
+  }
+}
+
+@media (max-width: 1276px) {
+  .delete-img-3 {
+    top: 24%;
+  }
+}
+
+@media (max-width: 1198px) {
+  .delete-img-3 {
+    top: 33%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 1072px) {
+  .delete-img-3 {
+    top: 31%;
+  }
+}
+
+@media (max-width: 990px) {
+  .delete-img-3 {
+    top: 40%;
+    left: 7%;
+  }
+}
+/*# sourceMappingURL=Admin_Commoditys.css.map */
