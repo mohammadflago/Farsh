@@ -21,35 +21,37 @@
             <img class="float-right nav-sm-icon" src="./image/nav-icon.png" alt="icon" data-toggle="drawer"
             data-target="#drawer-1" style="width: 40px; height: 30px;">
         </nav>
-        <aside class="d-none d-lg-flex flex-column">
+        <aside class="d-none d-lg-flex flex-column w-25">
             <!-- information admin -->
-            <div class="ml-4 bg-white row no-gutters p-2 mr-4 mt-5 pb-lg-2 d-none d-md-flex d-lg-flex d-xl-flex justify-content-center mb-3" id="image" style="height: 280px;margin-top: 2rem !important;border-radius: 1px !important;">
-                <img src="./image/bill.jpg" class="user-img rounded-circle" id="image2">
-                <h5 class="UserName_txt text-nowrap text-white">
+            <div class="ml-4 bg-white row no-gutters p-2 mr-4 mt-5 pb-lg-2 d-none d-md-flex d-lg-flex d-xl-flex justify-content-center mb-3" id="image" style="height: 200px;margin-top: 2rem !important;border-radius: 1px !important;">
+                <div class="d-flex w-100 justify-content-center mt-1">
+                    <img src="./image/bill.jpg" class="user-img rounded-circle" id="image2">
+                </div>
+                <h5 class="UserName_txt text-nowrap text-white mt-3" style="line-height: 0 !important;">
                     امیر حسین میرزایی
                 </h5>
-                <div class="d-flex justify-content-center w-100">
-                    <p class="PhoneUnderName text-nowrap mt-2 text-white" style="font-size: 14px;"> +98 09123456789</p>
-            
+                <div class="d-flex justify-content-center w-100 mt-2">
+                    <p class="PhoneUnderName text-nowrap text-white m-0" style="font-size: 14px;margin: 0 0 0 0 !important;"> +98 09123456789</p>
+
                 </div>
             </div>
-                        <!-- end information admin -->
+            <!-- end information admin -->
             <!-- main asaid bar -->
             <div class="row no-gutters mr-4 mt-5  d-none d-md-flex d-lg-flex d-xl-flex" id="money" style="height: 470px; border:none;">
                 <ul class="w-100 d-flex justify-content-center flex-column align-items-center m-0 ">
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d ;">&ApplyFunction;</li>
 
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
-                        <a href="#" class="d-flex align-items-center pb-3 pt-0 text-white">کالا ها</a>
-                    </li>
-                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
-                        <a href="#" class="d-flex align-items-center p-3 text-white">فاکتور ها</a>
-                    </li>
-                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;">
-                        <a href="#" class="d-flex align-items-center p-3 text-white">درخواست ها</a>
+                        <a href="#" class="d-flex align-items-center pb-3 pr-3 pl-3 pt-0 text-white">کالا ها</a>
                     </li>
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" >
-                        <a href="#" class="d-flex align-items-center p-3 text-white" style="color: #ffae00 !important;">مانیتورینگ</a>
+                        <a href="#" class="d-flex align-items-center p-3 text-white"  style="color: #ffae00 !important;">فاکتور ها</a>
+                    </li>
+                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;"b>
+                        <a href="#" class="d-flex align-items-center p-3 text-white">درخواست ها</a>
+                    </li>
+                    <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
+                        <a href="#" class="d-flex align-items-center p-3 text-white">مانیتورینگ</a>
                     </li>
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;"  >
                         <a href="#" class="d-flex align-items-center p-3 text-white">اعلان ها</a>
@@ -61,7 +63,7 @@
                         <a href="#" class="d-flex align-items-center p-3 text-white">اطلاعات کاربری</a>
                     </li>
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d;" >
-                        <a href="#" class="d-flex align-items-center pt-3 pb-0 text-white">خروج از حساب</a>
+                        <a href="#" class="d-flex align-items-center pt-3 pl-3 pr-3 pb-0 text-white">خروج از حساب</a>
                     </li>
                     <li class="w-100 d-flex justify-content-center flex-column align-items-center" style="background-color: #004b7d ;">&ApplyFunction;</li>
                 </ul>
@@ -75,24 +77,40 @@
     <main class="d-flex w-100 pl-2 pr-2 pr-lg-0 pl-lg-3 pt-3">
         <div class="w-100 mt-5 pt-5 pt-lg-0 mt-lg-3">
             <table class="d-flex flex-column w-100">
-                <thead class="w-100 bg-primary">
+                <thead class="w-100" style="background-color: #004b7d;">
                     <tr class="d-flex justify-content-around align-items-center justify-content-center">
-                        <th class="p-3 w-100 text-center font text-nowrap">کد سفارش</th>
-                        <th class="p-3 w-100 text-center font text-nowrap">کد خریدار</th>
-                        <th class="p-3 w-100 text-center font text-nowrap">قیمت (قیمت)</th>
-                        <th class="p-3 w-100 text-center font text-nowrap">تاریخ و ساعت</th>
-                        <th class="p-3 w-100 text-center font text-nowrap">وضعیت</th>
-                        <th class="p-3 w-100 text-center font text-nowrap">جزعیات</th>
+                        <th class="p-3 w-100 text-center font text-nowrap text-white">کد سفارش</th>
+                        <th class="p-3 w-100 text-center font text-nowrap text-white">کد خریدار</th>
+                        <th class="p-3 w-100 text-center font text-nowrap text-white">قیمت (قیمت)</th>
+                        <th class="p-3 w-100 text-center font text-nowrap text-white">تاریخ و ساعت</th>
+                        <th class="p-3 w-100 text-center font text-nowrap text-white">وضعیت</th>
+                        <th class="p-3 w-100 text-center font text-nowrap text-white">جزعیات</th>
                     </tr>
                 </thead>
                 <tbody class="w-100">
-                    <tr class="d-flex justify-content-around align-items-center justify-content-center">
-                        <td class="p-3 w-100 text-center font text-nowrap">4123</td>
-                        <td class="p-3 w-100 text-center font text-nowrap">23</td>
-                        <td class="p-3 w-100 text-center font text-nowrap">۵۴۰۰۰۰۰۰</td>
-                        <td class="p-3 w-100 text-center font text-nowrap">۱۳۷۷/۴/۲ <br> &nbsp;&nbsp;&nbsp; 19:30 </td>
-                        <td class="p-3 w-100 text-center font text-nowrap">در انتظار تایید</td>
-                        <td class="p-3 w-100 text-center font text-nowrap">bg</td>
+                    <tr class="d-flex justify-content-around align-items-center justify-content-center" style="background-color: #e9f6ff;">
+                        <td class="p-2 w-100 text-center font text-nowrap ">4123</td>
+                        <td class="p-2 w-100 text-center font text-nowrap ">23</td>
+                        <td class="p-2 w-100 text-center font text-nowrap ">۵۴۰۰۰۰۰۰</td>
+                        <td class="p-2 w-100 text-center font text-nowrap ">۱۳۷۷/۴/۲ <br> &nbsp;&nbsp;&nbsp; ۱۷:۳۰ &nbsp;&nbsp;&nbsp; </td>
+                        <td class="p-2 w-100 text-center font text-nowrap " style="color: #ffae00;">در انتظار تایید <img class="img-ff" src="image/chevron-down-96.png" alt="chevron-down"></td>
+                        <td class="p-2 w-100 text-center font text-nowrap "><img src="image/193320-OXWPTA-26@2x.png" class="img-factor-r" alt="factor"></td>
+                    </tr>
+                    <tr class="d-flex justify-content-around align-items-center justify-content-center bg-white">
+                        <td class="p-2 w-100 text-center font text-nowrap ">4123</td>
+                        <td class="p-2 w-100 text-center font text-nowrap ">23</td>
+                        <td class="p-2 w-100 text-center font text-nowrap ">۵۴۰۰۰۰۰۰</td>
+                        <td class="p-2 w-100 text-center font text-nowrap ">۱۳۷۷/۴/۲ <br> &nbsp;&nbsp;&nbsp; ۱۷:۳۰ &nbsp;&nbsp;&nbsp;  </td>
+                        <td class="p-2 w-100 text-center font text-nowrap text-success">ارسال توسط باربری <img class="img-ff" src="image/chevron-down-96.png" alt="chevron-down"></td>
+                        <td class="p-2 w-100 text-center font text-nowrap "><img src="image/193320-OXWPTA-26@2x.png" class="img-factor-r" alt="factor"></td>
+                    </tr>
+                    <tr class="d-flex justify-content-around align-items-center justify-content-center" style="background-color: #e9f6ff;">
+                        <td class="p-2 w-100 text-center font text-nowrap ">4123</td>
+                        <td class="p-2 w-100 text-center font text-nowrap ">23</td>
+                        <td class="p-2 w-100 text-center font text-nowrap ">۵۴۰۰۰۰۰۰</td>
+                        <td class="p-2 w-100 text-center font text-nowrap ">۱۳۷۷/۴/۲ <br> &nbsp;&nbsp;&nbsp; ۱۷:۳۰ &nbsp;&nbsp;&nbsp;  </td>
+                        <td class="p-2 w-100 text-center font text-nowrap text-success">تکمیل</td>
+                        <td class="p-2 w-100 text-center font text-nowrap "><img src="image/193320-OXWPTA-26@2x.png" class="img-factor-r" alt="factor"></td>
                     </tr>
                 </tbody>
             </table>
@@ -103,11 +121,11 @@
     <div class="drawer drawer-right slide" tabindex="-1" role="dialog" aria-labelledby="drawer-1-title" id="drawer-1" style="width: 260px; border: none !important; display: none;" aria-hidden="true">
         <div class="drawer-content drawer-content-scrollable" role="document" style="border: none !important;width: 100% !important;">
             <div class="drawer-body text-center mt-0 m-0 p-0 d-flex " style="width: 100% !important;">
-                <div class="bg-white row no-gutters p-2  pb-lg-2 d-xs-flex d-sm-flex d-lg-none  mt-0 w-100 mb-0" id="image_mobile" style="margin-top: 0rem !important;width: 100% !important;border-radius: 0% !important;">
+                <div class="bg-white row no-gutters p-2  pb-lg-2 d-xs-flex d-sm-flex d-lg-none  mt-0 w-100 mb-0" id="image_mobile" style="margin-top: 0rem !important;width: 100% !important;border-radius: 0px !important;">
                     <div class="w-100 d-flex justify-content-center">
                         <img src="./image/bill.jpg" class="user-img rounded-circle mt-4 mt-sm-3" id="image2">
                     </div>
-                    <h5 class="UserName_txt text-nowrap text-white w-100 text-center">
+                    <h5 class="UserName_txt text-nowrap text-white w-100 text-center mt-2">
                         امیر حسین میرزایی
                     </h5>
                     <div class="d-flex justify-content-between w-100">
@@ -115,7 +133,7 @@
                     </div>
                 </div>
                 <div class="bg-white row no-gutters mt-0  d-flex d-lg-none bg-primary w-100" id="money" style="height: 470px; border:none;border-radius: 0px !important;">
-                    <ul class="w-100 d-flex justify-content-center flex-column align-items-center pt-2 m-0  w-100" style="background-color: #004b7d ;">
+                    <ul class="w-100 d-flex justify-content-center flex-column align-items-center pt-2 m-0  w-100"style="background-color: #004b7d ;">
                         <li class="w-100 d-flex justify-content-center flex-column align-items-center">
                             <a href="#" class="d-flex align-items-center p-3 text-white">کالا ها</a>
                         </li>
@@ -125,8 +143,8 @@
                         <li class="w-100 d-flex justify-content-center flex-column align-items-center">
                             <a href="#" class="d-flex align-items-center p-3 text-white" >درخواست ها</a>
                         </li>
-                        <li class="w-100 d-flex justify-content-center flex-column align-items-center  bg-white">
-                            <a href="#" class="d-flex align-items-center p-3 text-white" style="color: #ffae00 !important;">مانیتورینگ</a>
+                        <li class="w-100 d-flex justify-content-center flex-column align-items-center ">
+                            <a href="#" class="d-flex align-items-center p-3 text-white">مانیتورینگ</a>
                         </li>
                         <li class="w-100 d-flex justify-content-center flex-column align-items-center" >
                             <a href="#" class="d-flex align-items-center p-3 text-white">اعلان ها</a>
@@ -134,8 +152,8 @@
                         <li class="w-100 d-flex justify-content-center flex-column align-items-center">
                             <a href="#" class="d-flex align-items-center p-3 text-white">تیکت ها</a>
                         </li>
-                        <li class="w-100 d-flex justify-content-center flex-column align-items-center">
-                            <a href="#" class="d-flex align-items-center p-3 text-white">اطلاعات کاربری</a>
+                        <li class="w-100 d-flex justify-content-center flex-column align-items-center bg-white">
+                            <a href="#" class="d-flex align-items-center p-3 text-white" style="color: #ffae00 !important;">اطلاعات کاربری</a>
                         </li>
                         <li class="w-100 d-flex justify-content-center flex-column align-items-center">
                             <a href="#" class="d-flex align-items-center p-3 text-white">خروج از حساب</a>
