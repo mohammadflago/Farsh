@@ -302,9 +302,15 @@ a {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 860px) {
   .font-tickets {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 460px) {
+  .font-tickets {
+    font-size: 10px;
   }
 }
 
