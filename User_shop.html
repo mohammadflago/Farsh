@@ -115,7 +115,7 @@
                     <div class="pl-2 pr-2 pt-5 pb-5 " style="background-color: #fff9eb;">
                         <img src="image/carpet_PNG57715@2x.png" style="width: 100%;" alt="carpet_PNG">
                         <div style="width: 50px;height: 50px;top: 1rem;right: 1rem;background-color: #e3ab40 !important;" class="text-white d-flex justify-content-center align-items-center position-absolute">10%</div>
-						<div style="width: 90%;height: 50px;left: 1rem;" class="fofo text-white d-flex justify-content-center align-items-center position-absolute ">
+						<div style="width: 90%;height: 50px;left: 1rem;" class="fofo text-white justify-content-center align-items-center position-absolute ">
 							<img src="image/view@2x.png" width="30px" class="m-3" alt="">
 							<img src="image/like@2x.png" width="30px" class="m-3" alt="">
 							<img src="image/repeat@2x.png" width="30px" class="m-3" alt="">
@@ -198,19 +198,32 @@
 	</div>
 	<!-- end Drawer -->
 
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-	<script src="./dist/js/bootstrap-drawer.js"></script>
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="./dist/js/bootstrap-drawer.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
 	<script>
+		$(".fofo").addClass("d-none");
 
-		$("#Ffofo").hide();
+       NodeList.prototype.forEach = HTMLCollection.prototype.forEach = Array.prototype.forEach; 
+	   document.querySelectorAll('#Ffofo').forEach(function(foo) {
 
-		$(".Ffofo").hover(function (){
-			$(".fofo").fadeIn();
-		});
+			foo.addEventListener('mouseenter', function() {
+				foo.querySelector('.fofo').classList.add("d-flex");
+				foo.classList.add("example1");
+            });
+
+            foo.addEventListener('mouseleave', function() { 
+                foo.querySelector('.fofo').classList.remove("d-flex");
+				foo.classList.remove("example1");
+            });
+
+        });
+    
+	</script>
+	<script>
+
+
 
 		// document.body.style.zoom = "90%";
 		// set profile image

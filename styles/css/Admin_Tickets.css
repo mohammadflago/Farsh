@@ -265,7 +265,7 @@ a {
 }
 
 .w-f-t {
-  width: 50%;
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -274,9 +274,47 @@ a {
   }
 }
 
+.www {
+  width: 23% !important;
+}
+
+@media (max-width: 1200px) {
+  .www {
+    width: 35% !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .www {
+    width: 40% !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .www {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .www {
+    width: 100% !important;
+  }
+}
+
 @media (max-width: 460px) {
   .font-tickets {
     font-size: 12px;
+  }
+}
+
+.img-t-f {
+  width: 36px;
+}
+
+@media (max-width: 700px) {
+  .img-t-f {
+    width: 27px;
   }
 }
 /*# sourceMappingURL=Admin_Tickets.css.map */

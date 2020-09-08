@@ -4,10 +4,26 @@
     background-color: #004b7d;
 }
 .w-f-t{
-    width: 50%;
+    width: 100%;
     
     @media (max-width: 1200px) {
         width: 100%;
+    }
+}
+.www{
+    width: 23% !important;
+    
+    @media (max-width: 1200px) {
+        width: 35% !important;
+    }
+    @media (max-width: 1000px) {
+        width: 40% !important;
+    }
+    @media (max-width: 800px) {
+        width: 50% !important;
+    }
+    @media (max-width: 500px) {
+        width: 100% !important;
     }
 }
 
@@ -15,4 +31,11 @@
     @media (max-width: 460px) {
         font-size: 12px;
     }
+}
+
+.img-t-f{
+  width: 36px;
+  @media (max-width: 700px) {
+    width: 27px;
+}
 }
